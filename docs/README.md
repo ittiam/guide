@@ -12,7 +12,7 @@ footer: MIT Licensed | Copyright © 2020 Front-End Coding Guidelines
   </a>
   <a class="feature" href="/docs/css/code">
     <h2><vp-icon name="css" /></h2>
-    <p>统一团队 CSS 代码书写和 SASS 预编译语言的语法风格，提供常用媒体查询语句和浏览器私有属性引用，并从业务层面统一规范常用模块的引用。</p>
+    <p>统一团队 CSS 代码书写和 LESS 预编译语言的语法风格，提供常用媒体查询语句和浏览器私有属性引用，并从业务层面统一规范常用模块的引用。</p>
   </a>
   <a class="feature" href="/docs/javascript/code">
     <h2><vp-icon name="javascript" /></h2>
