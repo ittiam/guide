@@ -1,0 +1,25 @@
+{
+  "name": "guide",
+  "version": "0.0.1",
+  "description": "Front-End Coding Guidelines",
+  "main": "index.js",
+  "directories": {
+    "docs": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@goy/vuepress-plugin-svg-icons": "^4.1.0",
+    "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "@vuepress/plugin-active-header-links": "^1.4.1",
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "@vuepress/plugin-medium-zoom": "^1.4.1",
+    "vuepress-theme-antdocs": "^1.0.0"
+  }
+}
