@@ -52,7 +52,7 @@ module.exports = {
         },
         {
           title: "VUE 规范",
-          children: ["/docs/vue/code"],
+          children: ["/docs/vue/code", "/docs/vue/router", "/docs/vue/project"],
         },
         {
           title: "图片规范",

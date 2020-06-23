@@ -2,6 +2,14 @@
 
 ---
 
+## 组件标签排序
+
+组件中必须按照 `<template>`, `<script>`, `<style>` 排序
+
+## script 标签内部结构顺序
+
+name > components > props > data > computed > watch > filter > 钩子函数（钩子函数按其执行顺序） > methods
+
 ## 组件规范
 
 ## 组件名为多个单词
@@ -1147,3 +1155,11 @@ computed: {
   <p>Here's some contact info</p>
 </template>
 ```
+
+### 其他
+
+1. 尽量不要手动操作 DOM
+   因使用 Vue 框架，所以在项目开发中尽量使用 Vue 的数据驱动更新 DOM，尽量（不到万不得已）不要手动操作 DOM，包括：增删改 dom 元素、以及更改样式、添加事件等。
+
+2. 删除无用代码
+   因使用了 git/svn 等代码版本工具，对于无用代码必须及时删除，例如：一些调试的 console 语句、无用的弃用功能代码。
