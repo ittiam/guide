@@ -20,7 +20,7 @@ this.$router.push({ name: "userCenter", query: { id: id } });
   meta: {
     title: '上传附件'
   },
-  component: () => import('@/view/components/UploadAttachment/Index.vue')
+  component: () => import('@/view/components/UploadAttachment/index.vue')
 }
 ```
 
