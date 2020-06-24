@@ -6,27 +6,20 @@
 
 **推荐阅读**
 
-- [Annotated ECMAScript 5.1](http://es5.github.com/)
+- [Annotated ECMAScript 5.1](https://es5.github.com/)
 
 **工具**
 
 - Code Style Linters
-  - [JSHint](http://www.jshint.com/) - [Airbnb Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/.jshintrc)
-  - [JSCS](https://github.com/jscs-dev/node-jscs) - [Airbnb Style Preset](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
+  - [ESlint](https://eslint.org/) - [Airbnb Style](https://github.com/airbnb/javascript/)
+  - [Prettier](https://prettier.io/)
+  - [Stylelint](https://stylelint.io/)
 
 **其它风格指南**
 
 - [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-- [jQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
 - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwldrn/idiomatic.js/)
 - [JavaScript Standard Style](https://github.com/feross/standard)
-
-**其它风格**
-
-- [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
-- [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52) - Ross Allen
-- [Popular JavaScript Coding Conventions on Github](http://sideeffect.kr/popularconvention/#javascript) - JeongHoon Byun
-- [Multiple var statements in JavaScript, not superfluous](http://benalman.com/news/2012/05/multiple-var-statements-javascript/) - Ben Alman
 
 **进一步阅读**
 
@@ -38,37 +31,31 @@
 
 **书籍**
 
-- [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
-- [JavaScript Patterns](http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752) - Stoyan Stefanov
-- [Pro JavaScript Design Patterns](http://www.amazon.com/JavaScript-Design-Patterns-Recipes-Problem-Solution/dp/159059908X) - Ross Harmes and Dustin Diaz
-- [High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.amazon.com/High-Performance-Web-Sites-Essential/dp/0596529309) - Steve Souders
-- [Maintainable JavaScript](http://www.amazon.com/Maintainable-JavaScript-Nicholas-C-Zakas/dp/1449327680) - Nicholas C. Zakas
-- [JavaScript Web Applications](http://www.amazon.com/JavaScript-Web-Applications-Alex-MacCaw/dp/144930351X) - Alex MacCaw
-- [Pro JavaScript Techniques](http://www.amazon.com/Pro-JavaScript-Techniques-John-Resig/dp/1590597273) - John Resig
-- [Smashing Node.js: JavaScript Everywhere](http://www.amazon.com/Smashing-Node-js-JavaScript-Everywhere-Magazine/dp/1119962595) - Guillermo Rauch
-- [Secrets of the JavaScript Ninja](http://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X) - John Resig and Bear Bibeault
-- [Human JavaScript](http://humanjavascript.com/) - Henrik Joreteg
-- [Superhero.js](http://superherojs.com/) - Kim Joar Bekkelund, Mads Mobæk, & Olav Bjorkoy
-- [JSBooks](http://jsbooks.revolunet.com/) - Julien Bouquillon
-- [Third Party JavaScript](http://manning.com/vinegar/) - Ben Vinegar and Anton Kovalyov
-- [Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](http://amzn.com/0321812182) - David Herman
-- [Eloquent JavaScript](http://eloquentjavascript.net) - Marijn Haverbeke
+- [JavaScript 高级程序设计（第 3 版）](https://book.douban.com/subject/10546125/) - Nicholas C. Zakas
+- [Eloquent JavaScript](https://eloquentjavascript.net/) - Marijn Haverbeke
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - Kyle Simpson
+- [深入理解 ES6](https://book.douban.com/subject/27072230/) - Nicholas C. Zakas
+- [CSS 揭秘](https://book.douban.com/subject/26745943/) - Lea Verou
+- [Web 性能权威指南](https://book.douban.com/subject/25856314/)
+- [图解 HTTP](https://book.douban.com/subject/25863515/)
+- [网络是怎样连接的](https://book.douban.com/subject/26941639/)
+- [计算机是怎样跑起来的](https://book.douban.com/subject/26397183/)
 
 **博客**
 
-- [DailyJS](http://dailyjs.com/)
-- [JavaScript Weekly](http://javascriptweekly.com/)
-- [JavaScript, JavaScript...](http://javascriptweblog.wordpress.com/)
-- [Bocoup Weblog](http://weblog.bocoup.com/)
-- [Adequately Good](http://www.adequatelygood.com/)
-- [NCZOnline](http://www.nczonline.net/)
-- [Perfection Kills](http://perfectionkills.com/)
-- [Ben Alman](http://benalman.com/)
-- [Dmitry Baranovskiy](http://dmitry.baranovskiy.com/)
-- [Dustin Diaz](http://dustindiaz.com/)
-- [nettuts](http://net.tutsplus.com/?s=javascript)
+- [DailyJS](https://dailyjs.com/)
+- [JavaScript Weekly](https://javascriptweekly.com/)
+- [Dan Abramov](https://overreacted.io/)
+- [JavaScript, JavaScript...](https://javascriptweblog.wordpress.com/)
+- [Bocoup Weblog](https://weblog.bocoup.com/)
+- [Adequately Good](https://www.adequatelygood.com/)
+- [NCZOnline](https://www.nczonline.net/)
+- [Perfection Kills](https://perfectionkills.com/)
+- [Ben Alman](https://benalman.com/)
+- [Dmitry Baranovskiy](https://dmitry.baranovskiy.com/)
+- [Dustin Diaz](https://dustindiaz.com/)
+- [nettuts](https://net.tutsplus.com/?s=javascript)
 
 **播客**
 
-- [JavaScript Jabber](http://devchat.tv/js-jabber/)
+- [JavaScript Jabber](https://devchat.tv/js-jabber/)

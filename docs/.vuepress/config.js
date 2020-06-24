@@ -32,12 +32,12 @@ module.exports = {
           title: "CSS 规范",
           children: [
             "/docs/css/code",
-            "/docs/css/compat",
             "/docs/css/less",
             "/docs/css/note",
             "/docs/css/query",
             "/docs/css/reset",
             "/docs/css/webkit",
+            "/docs/css/compat",
           ],
         },
         {
@@ -48,6 +48,7 @@ module.exports = {
             "/docs/javascript/performance",
             "/docs/javascript/resource",
             "/docs/javascript/es6",
+            "/docs/javascript/experience",
           ],
         },
         {
