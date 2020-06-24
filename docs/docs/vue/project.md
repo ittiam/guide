@@ -167,14 +167,14 @@ components 中组件要使用 PascalCase 规则
 ```
 |-- views                            视图目录
 |   |-- role                             role模块名
-|   |   |-- role-list.vue                    role列表页面
-|   |   |-- role-add.vue                     role新建页面
-|   |   |-- role-update.vue                  role更新页面
+|   |   |-- RoleList.vue                    role列表页面
+|   |   |-- RoleAdd.vue                     role新建页面
+|   |   |-- RoleUpdate.vue                  role更新页面
 |   |   |-- index.less                      role模块样式
 |   |   |-- components                      role模块通用组件文件夹
-|   |   |   |-- role-header.vue                        role头部组件
-|   |   |   |-- role-modal.vue                         role弹出框组件
+|   |   |   |-- RoleHeader.vue                       role头部组件
+|   |   |   |-- RoleModal.vue                        role弹出框组件
 |   |-- employee                         employee模块
-|   |-- behavior-log                      行为日志log模块
-|   |-- code-generator                    代码生成器模块
+|   |-- behavior-log                     行为日志log模块
+|   |-- code-generator                   代码生成器模块
 ```
