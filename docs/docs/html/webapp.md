@@ -10,69 +10,6 @@ WebApp 目的在于使其界面和行为在某种程度上类似于原生 APP �
 
 WebApp 可以通过设置 meta 标签来改变页面的一些表现，有些 meta 设置在 Safari 应用或原生 App 的内嵌网页中都可以生效，而有些设置侧需要将应用添加到主屏幕的时候才会生效。
 
-## 移动端自适应
-
-```js
-(function() {
-  var doc = window.document;
-  var documentElement = doc.documentElement;
-  var viewport = doc.querySelector('meta[name="viewport"]');
-  var isAndroid = navigator.appVersion.match(/android/gi);
-  var isIos = navigator.appVersion.match(/iphone|ipod|ipad/gi) && !isAndroid;
-  var designWidth = 750;
-
-  var pixelRatio = isIos
-    ? window.devicePixelRatio >= 3
-      ? 3
-      : window.devicePixelRatio >= 2
-      ? 2
-      : 1
-    : 1;
-  var scale = 1 / pixelRatio;
-  var timeoutId;
-
-  documentElement.setAttribute("data-dpr", pixelRatio);
-  if (!viewport) {
-    viewport = doc.createElement("meta");
-    viewport.setAttribute("name", "viewport");
-    viewport.setAttribute(
-      "content",
-      "initial-scale=" +
-        scale +
-        ", maximum-scale=" +
-        scale +
-        ", minimum-scale=" +
-        scale +
-        ", user-scalable=no"
-    );
-    documentElement.firstElementChild.appendChild(viewport);
-  }
-
-  mresize();
-  window.addEventListener("resize", mresize, false);
-
-  window.addEventListener(
-    "pageshow",
-    function(e) {
-      if (e.persisted) {
-        mresize();
-      }
-    },
-    false
-  );
-
-  function mresize() {
-    var innerWidth = documentElement.getBoundingClientRect().width;
-    if (innerWidth / pixelRatio > designWidth) {
-      innerWidth = designWidth * pixelRatio;
-    }
-
-    var fontSize = (innerWidth / designWidth) * 100;
-    documentElement.style.fontSize = fontSize + "px";
-  }
-})();
-```
-
 ### Viewport Meta Tag
 
 #### 通用类设置
@@ -80,8 +17,7 @@ WebApp 可以通过设置 meta 标签来改变页面的一些表现，有些 met
 ```html
 <meta
   name="viewport"
-  content="width=device-width, initial-scale=1.0,
-maximum-scale=1.0, user-scalable=no"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 />
 ```
 
