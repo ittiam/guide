@@ -12,6 +12,10 @@ module.exports = {
         link: "/",
       },
       {
+        text: "新人指引",
+        link: "/docs/common/kickoff",
+      },
+      {
         text: "文档",
         link: "/docs/",
       },
@@ -19,6 +23,7 @@ module.exports = {
     sidebar: {
       "/docs": [
         "/docs/",
+        "/docs/common/kickoff",
         {
           title: "HTML 规范",
           children: [
