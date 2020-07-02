@@ -42,13 +42,15 @@ npm install babel-preset-mixup --save-dev
 }
 ```
 
-### [eslint](https://github.com/ittiam/mixup/blob/master/packages/eslint-config-mixup/README.md)
+### eslint
 
 项目配置 .eslintrc
 
 ```bash
 npm install eslint babel-eslint  eslint-config-mixup --save-dev
 ```
+
+[配置参考](https://github.com/ittiam/mixup/blob/master/packages/eslint-config-mixup/README.md)
 
 ```javascript
 // .eslintrc.js
@@ -113,6 +115,24 @@ npm install prettier-eslint prettier-stylelint --save-dev
 
 1. 安装插件 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 2. 同步配置 https://gist.github.com/ittiam/0fc51ecd8295fe682836e58b02da5bcb
+
+配置 jsconfig.json
+
+```json
+{
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*", "mock"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./components/*"],
+      "@assets/*": ["./assets/*"],
+      "@common/*": ["./common/*"]
+    }
+  }
+}
+```
 
 配置参考:
 
