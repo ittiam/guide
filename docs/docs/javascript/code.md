@@ -33,13 +33,13 @@ _Clean Code_ 作者多年经验的结晶。
 **不好的：**
 
 ```javascript
-const yyyymmdstr = moment().format("YYYY/MM/DD");
+const yyyymmdstr = moment().format('YYYY/MM/DD');
 ```
 
 **好的：**
 
 ```javascript
-const currentDate = moment().format("YYYY/MM/DD");
+const currentDate = moment().format('YYYY/MM/DD');
 ```
 
 ### 为相同类型的变量使用相同的词汇
@@ -86,18 +86,15 @@ setTimeout(blastOff, MILLISECONDS_IN_A_DAY);
 **不好的：**
 
 ```javascript
-const address = "One Infinite Loop, Cupertino 95014";
+const address = 'One Infinite Loop, Cupertino 95014';
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
-saveCityZipCode(
-  address.match(cityZipCodeRegex)[1],
-  address.match(cityZipCodeRegex)[2]
-);
+saveCityZipCode(address.match(cityZipCodeRegex)[1], address.match(cityZipCodeRegex)[2]);
 ```
 
 **好的：**
 
 ```javascript
-const address = "One Infinite Loop, Cupertino 95014";
+const address = 'One Infinite Loop, Cupertino 95014';
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
@@ -110,7 +107,7 @@ saveCityZipCode(city, zipCode);
 **不好的：**
 
 ```javascript
-const locations = ["Austin", "New York", "San Francisco"];
+const locations = ['Austin', 'New York', 'San Francisco'];
 locations.forEach((l) => {
   doStuff();
   doSomeOtherStuff();
@@ -125,7 +122,7 @@ locations.forEach((l) => {
 **好的：**
 
 ```javascript
-const locations = ["Austin", "New York", "San Francisco"];
+const locations = ['Austin', 'New York', 'San Francisco'];
 locations.forEach((location) => {
   doStuff();
   doSomeOtherStuff();
@@ -144,13 +141,13 @@ locations.forEach((location) => {
 
 ```javascript
 const Car = {
-  carMake: "Honda",
-  carModel: "Accord",
-  carColor: "Blue",
+  carMake: 'Honda',
+  carModel: 'Accord',
+  carColor: 'Blue',
 };
 
 function paintCar(car) {
-  car.carColor = "Red";
+  car.carColor = 'Red';
 }
 ```
 
@@ -158,13 +155,13 @@ function paintCar(car) {
 
 ```javascript
 const Car = {
-  make: "Honda",
-  model: "Accord",
-  color: "Blue",
+  make: 'Honda',
+  model: 'Accord',
+  color: 'Blue',
 };
 
 function paintCar(car) {
-  car.color = "Red";
+  car.color = 'Red';
 }
 ```
 
@@ -174,7 +171,7 @@ function paintCar(car) {
 
 ```javascript
 function createMicrobrewery(name) {
-  const breweryName = name || "Hipster Brew Co.";
+  const breweryName = name || 'Hipster Brew Co.';
   // ...
 }
 ```
@@ -182,7 +179,7 @@ function createMicrobrewery(name) {
 **好的：**
 
 ```javascript
-function createMicrobrewery(breweryName = "Hipster Brew Co.") {
+function createMicrobrewery(breweryName = 'Hipster Brew Co.') {
   // ...
 }
 ```
@@ -213,9 +210,9 @@ function createMenu(title, body, buttonText, cancellable) {
 
 ```javascript
 const menuConfig = {
-  title: "Foo",
-  body: "Bar",
-  buttonText: "Baz",
+  title: 'Foo',
+  body: 'Bar',
+  buttonText: 'Baz',
   cancellable: true,
 };
 
@@ -294,7 +291,7 @@ function parseBetterJSAlternative(code) {
     // ...
   ];
 
-  const statements = code.split(" ");
+  const statements = code.split(' ');
   const tokens = [];
   REGEXES.forEach((REGEX) => {
     statements.forEach((statement) => {
@@ -321,7 +318,7 @@ function tokenize(code) {
     // ...
   ];
 
-  const statements = code.split(" ");
+  const statements = code.split(' ');
   const tokens = [];
   REGEXES.forEach((REGEX) => {
     statements.forEach((statement) => {
@@ -411,7 +408,7 @@ function showList(employees) {
 
     let portfolio = employee.getGithubLink();
 
-    if (employee.type === "manager") {
+    if (employee.type === 'manager') {
       portfolio = employee.getMBAProjects();
     }
 
@@ -433,17 +430,16 @@ function showList(employees) {
 ```javascript
 const menuConfig = {
   title: null,
-  body: "Bar",
+  body: 'Bar',
   buttonText: null,
   cancellable: true,
 };
 
 function createMenu(config) {
-  config.title = config.title || "Foo";
-  config.body = config.body || "Bar";
-  config.buttonText = config.buttonText || "Baz";
-  config.cancellable =
-    config.cancellable === undefined ? config.cancellable : true;
+  config.title = config.title || 'Foo';
+  config.body = config.body || 'Bar';
+  config.buttonText = config.buttonText || 'Baz';
+  config.cancellable = config.cancellable === undefined ? config.cancellable : true;
 }
 
 createMenu(menuConfig);
@@ -453,18 +449,18 @@ createMenu(menuConfig);
 
 ```javascript
 const menuConfig = {
-  title: "Order",
+  title: 'Order',
   // User did not include 'body' key
-  buttonText: "Send",
+  buttonText: 'Send',
   cancellable: true,
 };
 
 function createMenu(config) {
   config = Object.assign(
     {
-      title: "Foo",
-      body: "Bar",
-      buttonText: "Baz",
+      title: 'Foo',
+      body: 'Bar',
+      buttonText: 'Baz',
       cancellable: true,
     },
     config
@@ -526,10 +522,10 @@ function createTempFile(name) {
 // If we had another function that used this name, now it'd be an array and it
 // could break it.
 // 如果我们有另一个函数使用这个 name ， 现在它应该是一个数组， 这可能会出现错误。
-let name = "Ryan McDermott";
+let name = 'Ryan McDermott';
 
 function splitIntoFirstAndLastName() {
-  name = name.split(" ");
+  name = name.split(' ');
 }
 
 splitIntoFirstAndLastName();
@@ -541,10 +537,10 @@ console.log(name); // ['Ryan', 'McDermott'];
 
 ```javascript
 function splitIntoFirstAndLastName(name) {
-  return name.split(" ");
+  return name.split(' ');
 }
 
-const name = "Ryan McDermott";
+const name = 'Ryan McDermott';
 const newName = splitIntoFirstAndLastName(name);
 
 console.log(name); // 'Ryan McDermott';
@@ -590,19 +586,19 @@ JavaScript 不是 Haskell 那种方式的函数式语言， 但是它有它的�
 ```javascript
 const programmerOutput = [
   {
-    name: "Uncle Bobby",
+    name: 'Uncle Bobby',
     linesOfCode: 500,
   },
   {
-    name: "Suzie Q",
+    name: 'Suzie Q',
     linesOfCode: 1500,
   },
   {
-    name: "Jimmy Gosling",
+    name: 'Jimmy Gosling',
     linesOfCode: 150,
   },
   {
-    name: "Gracie Hopper",
+    name: 'Gracie Hopper',
     linesOfCode: 1000,
   },
 ];
@@ -619,19 +615,19 @@ for (let i = 0; i < programmerOutput.length; i++) {
 ```javascript
 const programmerOutput = [
   {
-    name: "Uncle Bobby",
+    name: 'Uncle Bobby',
     linesOfCode: 500,
   },
   {
-    name: "Suzie Q",
+    name: 'Suzie Q',
     linesOfCode: 1500,
   },
   {
-    name: "Jimmy Gosling",
+    name: 'Jimmy Gosling',
     linesOfCode: 150,
   },
   {
-    name: "Gracie Hopper",
+    name: 'Gracie Hopper',
     linesOfCode: 1000,
   },
 ];
@@ -646,7 +642,7 @@ const totalOutput = programmerOutput
 **不好的：**
 
 ```javascript
-if (fsm.state === "fetching" && isEmpty(listNode)) {
+if (fsm.state === 'fetching' && isEmpty(listNode)) {
   // ...
 }
 ```
@@ -655,7 +651,7 @@ if (fsm.state === "fetching" && isEmpty(listNode)) {
 
 ```javascript
 function shouldShowSpinner(fsm, listNode) {
-  return fsm.state === "fetching" && isEmpty(listNode);
+  return fsm.state === 'fetching' && isEmpty(listNode);
 }
 
 if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
@@ -704,11 +700,11 @@ class Airplane {
   // ...
   getCruisingAltitude() {
     switch (this.type) {
-      case "777":
+      case '777':
         return this.getMaxAltitude() - this.getPassengerCount();
-      case "Air Force One":
+      case 'Air Force One':
         return this.getMaxAltitude();
-      case "Cessna":
+      case 'Cessna':
         return this.getMaxAltitude() - this.getFuelExpenditure();
     }
   }
@@ -754,9 +750,9 @@ JavaScript 是无类型的， 这意味着你的函数能接受任何类型的�
 ```javascript
 function travelToTexas(vehicle) {
   if (vehicle instanceof Bicycle) {
-    vehicle.peddle(this.currentLocation, new Location("texas"));
+    vehicle.peddle(this.currentLocation, new Location('texas'));
   } else if (vehicle instanceof Car) {
-    vehicle.drive(this.currentLocation, new Location("texas"));
+    vehicle.drive(this.currentLocation, new Location('texas'));
   }
 }
 ```
@@ -765,7 +761,7 @@ function travelToTexas(vehicle) {
 
 ```javascript
 function travelToTexas(vehicle) {
-  vehicle.move(this.currentLocation, new Location("texas"));
+  vehicle.move(this.currentLocation, new Location('texas'));
 }
 ```
 
@@ -782,13 +778,13 @@ TypeScript （就像我说的， 它是一个伟大的替代品）来完成这�
 ```javascript
 function combine(val1, val2) {
   if (
-    (typeof val1 === "number" && typeof val2 === "number") ||
-    (typeof val1 === "string" && typeof val2 === "string")
+    (typeof val1 === 'number' && typeof val2 === 'number') ||
+    (typeof val1 === 'string' && typeof val2 === 'string')
   ) {
     return val1 + val2;
   }
 
-  throw new Error("Must be of type String or Number");
+  throw new Error('Must be of type String or Number');
 }
 ```
 
@@ -843,7 +839,7 @@ function newRequestModule(url) {
 }
 
 const req = newRequestModule;
-inventoryTracker("apples", req, "www.inventory-awesome.io");
+inventoryTracker('apples', req, 'www.inventory-awesome.io');
 ```
 
 **好的：**
@@ -854,7 +850,7 @@ function newRequestModule(url) {
 }
 
 const req = newRequestModule;
-inventoryTracker("apples", req, "www.inventory-awesome.io");
+inventoryTracker('apples', req, 'www.inventory-awesome.io');
 ```
 
 ## **对象和数据结构**
@@ -935,7 +931,7 @@ Employee.prototype.getName = function getName() {
   return this.name;
 };
 
-const employee = new Employee("John Doe");
+const employee = new Employee('John Doe');
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: undefined
@@ -950,7 +946,7 @@ const Employee = function(name) {
   };
 };
 
-const employee = new Employee("John Doe");
+const employee = new Employee('John Doe');
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
@@ -969,7 +965,7 @@ console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 ```javascript
 const Animal = function(age) {
   if (!(this instanceof Animal)) {
-    throw new Error("Instantiate Animal with `new`");
+    throw new Error('Instantiate Animal with `new`');
   }
 
   this.age = age;
@@ -979,7 +975,7 @@ Animal.prototype.move = function move() {};
 
 const Mammal = function(age, furColor) {
   if (!(this instanceof Mammal)) {
-    throw new Error("Instantiate Mammal with `new`");
+    throw new Error('Instantiate Mammal with `new`');
   }
 
   Animal.call(this, age);
@@ -992,7 +988,7 @@ Mammal.prototype.liveBirth = function liveBirth() {};
 
 const Human = function(age, furColor, languageSpoken) {
   if (!(this instanceof Human)) {
-    throw new Error("Instantiate Human with `new`");
+    throw new Error('Instantiate Human with `new`');
   }
 
   Mammal.call(this, age, furColor);
@@ -1052,9 +1048,9 @@ class Human extends Mammal {
 ```javascript
 class Car {
   constructor() {
-    this.make = "Honda";
-    this.model = "Accord";
-    this.color = "white";
+    this.make = 'Honda';
+    this.model = 'Accord';
+    this.color = 'white';
   }
 
   setMake(make) {
@@ -1075,9 +1071,9 @@ class Car {
 }
 
 const car = new Car();
-car.setColor("pink");
-car.setMake("Ford");
-car.setModel("F-150");
+car.setColor('pink');
+car.setMake('Ford');
+car.setModel('F-150');
 car.save();
 ```
 
@@ -1086,9 +1082,9 @@ car.save();
 ```javascript
 class Car {
   constructor() {
-    this.make = "Honda";
-    this.model = "Accord";
-    this.color = "white";
+    this.make = 'Honda';
+    this.model = 'Accord';
+    this.color = 'white';
   }
 
   setMake(make) {
@@ -1117,9 +1113,9 @@ class Car {
 }
 
 const car = new Car()
-  .setColor("pink")
-  .setMake("Ford")
-  .setModel("F-150")
+  .setColor('pink')
+  .setMake('Ford')
+  .setModel('F-150')
   .save();
 ```
 
@@ -1253,14 +1249,14 @@ Bertrand Meyer 说过， “软件实体 (类， 模块， 函数等) 应该为�
 class AjaxAdapter extends Adapter {
   constructor() {
     super();
-    this.name = "ajaxAdapter";
+    this.name = 'ajaxAdapter';
   }
 }
 
 class NodeAdapter extends Adapter {
   constructor() {
     super();
-    this.name = "nodeAdapter";
+    this.name = 'nodeAdapter';
   }
 }
 
@@ -1270,11 +1266,11 @@ class HttpRequester {
   }
 
   fetch(url) {
-    if (this.adapter.name === "ajaxAdapter") {
+    if (this.adapter.name === 'ajaxAdapter') {
       return makeAjaxCall(url).then((response) => {
         // transform response and return
       });
-    } else if (this.adapter.name === "httpNodeAdapter") {
+    } else if (this.adapter.name === 'httpNodeAdapter') {
       return makeHttpCall(url).then((response) => {
         // transform response and return
       });
@@ -1297,7 +1293,7 @@ function makeHttpCall(url) {
 class AjaxAdapter extends Adapter {
   constructor() {
     super();
-    this.name = "ajaxAdapter";
+    this.name = 'ajaxAdapter';
   }
 
   request(url) {
@@ -1308,7 +1304,7 @@ class AjaxAdapter extends Adapter {
 class NodeAdapter extends Adapter {
   constructor() {
     super();
-    this.name = "nodeAdapter";
+    this.name = 'nodeAdapter';
   }
 
   request(url) {
@@ -1473,7 +1469,7 @@ class DOMTraverser {
 }
 
 const $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName("body"),
+  rootNode: document.getElementsByTagName('body'),
   animationModule() {}, // Most of the time, we won't need to animate when traversing.
   // ...
 });
@@ -1506,7 +1502,7 @@ class DOMTraverser {
 }
 
 const $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName("body"),
+  rootNode: document.getElementsByTagName('body'),
   options: {
     animationModule() {},
   },
@@ -1534,7 +1530,7 @@ const $ = new DOMTraverser({
 ```javascript
 class InventoryRequester {
   constructor() {
-    this.REQ_METHODS = ["HTTP"];
+    this.REQ_METHODS = ['HTTP'];
   }
 
   requestItem(item) {
@@ -1558,7 +1554,7 @@ class InventoryTracker {
   }
 }
 
-const inventoryTracker = new InventoryTracker(["apples", "bananas"]);
+const inventoryTracker = new InventoryTracker(['apples', 'bananas']);
 inventoryTracker.requestItems();
 ```
 
@@ -1580,7 +1576,7 @@ class InventoryTracker {
 
 class InventoryRequesterV1 {
   constructor() {
-    this.REQ_METHODS = ["HTTP"];
+    this.REQ_METHODS = ['HTTP'];
   }
 
   requestItem(item) {
@@ -1590,7 +1586,7 @@ class InventoryRequesterV1 {
 
 class InventoryRequesterV2 {
   constructor() {
-    this.REQ_METHODS = ["WS"];
+    this.REQ_METHODS = ['WS'];
   }
 
   requestItem(item) {
@@ -1600,10 +1596,7 @@ class InventoryRequesterV2 {
 
 // 通过外部创建依赖项并将它们注入， 我们可以轻松的用一个崭新的使用 WebSockets 的请求模块进行
 // 替换。
-const inventoryTracker = new InventoryTracker(
-  ["apples", "bananas"],
-  new InventoryRequesterV2()
-);
+const inventoryTracker = new InventoryTracker(['apples', 'bananas'], new InventoryRequesterV2());
 inventoryTracker.requestItems();
 ```
 
@@ -1623,23 +1616,23 @@ inventoryTracker.requestItems();
 **不好的：**
 
 ```javascript
-const assert = require("assert");
+const assert = require('assert');
 
-describe("MakeMomentJSGreatAgain", () => {
-  it("handles date boundaries", () => {
+describe('MakeMomentJSGreatAgain', () => {
+  it('handles date boundaries', () => {
     let date;
 
-    date = new MakeMomentJSGreatAgain("1/1/2015");
+    date = new MakeMomentJSGreatAgain('1/1/2015');
     date.addDays(30);
-    date.shouldEqual("1/31/2015");
+    date.shouldEqual('1/31/2015');
 
-    date = new MakeMomentJSGreatAgain("2/1/2016");
+    date = new MakeMomentJSGreatAgain('2/1/2016');
     date.addDays(28);
-    assert.equal("02/29/2016", date);
+    assert.equal('02/29/2016', date);
 
-    date = new MakeMomentJSGreatAgain("2/1/2015");
+    date = new MakeMomentJSGreatAgain('2/1/2015');
     date.addDays(28);
-    assert.equal("03/01/2015", date);
+    assert.equal('03/01/2015', date);
   });
 });
 ```
@@ -1647,25 +1640,25 @@ describe("MakeMomentJSGreatAgain", () => {
 **好的：**
 
 ```javascript
-const assert = require("assert");
+const assert = require('assert');
 
-describe("MakeMomentJSGreatAgain", () => {
-  it("handles 30-day months", () => {
-    const date = new MakeMomentJSGreatAgain("1/1/2015");
+describe('MakeMomentJSGreatAgain', () => {
+  it('handles 30-day months', () => {
+    const date = new MakeMomentJSGreatAgain('1/1/2015');
     date.addDays(30);
-    date.shouldEqual("1/31/2015");
+    date.shouldEqual('1/31/2015');
   });
 
-  it("handles leap year", () => {
-    const date = new MakeMomentJSGreatAgain("2/1/2016");
+  it('handles leap year', () => {
+    const date = new MakeMomentJSGreatAgain('2/1/2016');
     date.addDays(28);
-    assert.equal("02/29/2016", date);
+    assert.equal('02/29/2016', date);
   });
 
-  it("handles non-leap year", () => {
-    const date = new MakeMomentJSGreatAgain("2/1/2015");
+  it('handles non-leap year', () => {
+    const date = new MakeMomentJSGreatAgain('2/1/2015');
     date.addDays(28);
-    assert.equal("03/01/2015", date);
+    assert.equal('03/01/2015', date);
   });
 });
 ```
@@ -1680,17 +1673,17 @@ describe("MakeMomentJSGreatAgain", () => {
 **不好的：**
 
 ```javascript
-require("request").get(
-  "https://en.wikipedia.org/wiki/Robert_Cecil_Martin",
+require('request').get(
+  'https://en.wikipedia.org/wiki/Robert_Cecil_Martin',
   (requestErr, response) => {
     if (requestErr) {
       console.error(requestErr);
     } else {
-      require("fs").writeFile("article.html", response.body, (writeErr) => {
+      require('fs').writeFile('article.html', response.body, (writeErr) => {
         if (writeErr) {
           console.error(writeErr);
         } else {
-          console.log("File written");
+          console.log('File written');
         }
       });
     }
@@ -1701,13 +1694,13 @@ require("request").get(
 **好的：**
 
 ```javascript
-require("request-promise")
-  .get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
+require('request-promise')
+  .get('https://en.wikipedia.org/wiki/Robert_Cecil_Martin')
   .then((response) => {
-    return require("fs-promise").writeFile("article.html", response);
+    return require('fs-promise').writeFile('article.html', response);
   })
   .then(() => {
-    console.log("File written");
+    console.log('File written');
   })
   .catch((err) => {
     console.error(err);
@@ -1723,13 +1716,13 @@ Promises 是回调的一个非常简洁的替代品， 但是 ES2017/ES8 带来�
 **不好的：**
 
 ```javascript
-require("request-promise")
-  .get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
+require('request-promise')
+  .get('https://en.wikipedia.org/wiki/Robert_Cecil_Martin')
   .then((response) => {
-    return require("fs-promise").writeFile("article.html", response);
+    return require('fs-promise').writeFile('article.html', response);
   })
   .then(() => {
-    console.log("File written");
+    console.log('File written');
   })
   .catch((err) => {
     console.error(err);
@@ -1741,11 +1734,11 @@ require("request-promise")
 ```javascript
 async function getCleanCodeArticle() {
   try {
-    const response = await require("request-promise").get(
-      "https://en.wikipedia.org/wiki/Robert_Cecil_Martin"
+    const response = await require('request-promise').get(
+      'https://en.wikipedia.org/wiki/Robert_Cecil_Martin'
     );
-    await require("fs-promise").writeFile("article.html", response);
-    console.log("File written");
+    await require('fs-promise').writeFile('article.html', response);
+    console.log('File written');
   } catch (err) {
     console.error(err);
   }
@@ -1842,8 +1835,8 @@ JavaScript 是无类型的， 所以大小写告诉你关于你的变量、 函�
 const DAYS_IN_WEEK = 7;
 const daysInMonth = 30;
 
-const songs = ["Back In Black", "Stairway to Heaven", "Hey Jude"];
-const Artists = ["ACDC", "Led Zeppelin", "The Beatles"];
+const songs = ['Back In Black', 'Stairway to Heaven', 'Hey Jude'];
+const Artists = ['ACDC', 'Led Zeppelin', 'The Beatles'];
 
 function eraseDatabase() {}
 function restore_database() {}
@@ -1858,8 +1851,8 @@ class Alpaca {}
 const DAYS_IN_WEEK = 7;
 const DAYS_IN_MONTH = 30;
 
-const songs = ["Back In Black", "Stairway to Heaven", "Hey Jude"];
-const artists = ["ACDC", "Led Zeppelin", "The Beatles"];
+const songs = ['Back In Black', 'Stairway to Heaven', 'Hey Jude'];
+const artists = ['ACDC', 'Led Zeppelin', 'The Beatles'];
 
 function eraseDatabase() {}
 function restoreDatabase() {}
@@ -1883,11 +1876,11 @@ class PerformanceReview {
   }
 
   lookupPeers() {
-    return db.lookup(this.employee, "peers");
+    return db.lookup(this.employee, 'peers');
   }
 
   lookupManager() {
-    return db.lookup(this.employee, "manager");
+    return db.lookup(this.employee, 'manager');
   }
 
   getPeerReviews() {
@@ -1934,7 +1927,7 @@ class PerformanceReview {
   }
 
   lookupPeers() {
-    return db.lookup(this.employee, "peers");
+    return db.lookup(this.employee, 'peers');
   }
 
   getManagerReview() {
@@ -1942,7 +1935,7 @@ class PerformanceReview {
   }
 
   lookupManager() {
-    return db.lookup(this.employee, "manager");
+    return db.lookup(this.employee, 'manager');
   }
 
   getSelfReview() {
@@ -2056,8 +2049,8 @@ function combine(a, b) {
 // Scope Model Instantiation
 ////////////////////////////////////////////////////////////////////////////////
 $scope.model = {
-  menu: "foo",
-  nav: "bar",
+  menu: 'foo',
+  nav: 'bar',
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -2072,73 +2065,14 @@ const actions = function() {
 
 ```javascript
 $scope.model = {
-  menu: "foo",
-  nav: "bar",
+  menu: 'foo',
+  nav: 'bar',
 };
 
 const actions = function() {
   // ...
 };
 ```
-
-## 附： 函数方法常用的动词:
-
-| 函数名   | 含义 | 函数名      | 含义   |
-| -------- | ---- | ----------- | ------ |
-| get      | 获取 | set         | 设置   |
-| add      | 增加 | remove      | 获取   |
-| create   | 创建 | destory     | 移除   |
-| start    | 启动 | stop        | 停止   |
-| open     | 打开 | close       | 关闭   |
-| read     | 读取 | write       | 写入   |
-| load     | 载入 | save        | 保存   |
-| create   | 创建 | destroy     | 销毁   |
-| begin    | 开始 | end         | 结束   |
-| backup   | 备份 | restore     | 恢复   |
-| import   | 导入 | export      | 导出   |
-| split    | 分割 | merge       | 合并   |
-| inject   | 注入 | extract     | 载入   |
-| attach   | 附着 | detach      | 脱离   |
-| bind     | 绑定 | separate    | 分离   |
-| view     | 查看 | browse      | 浏览   |
-| edit     | 编辑 | modify      | 修改   |
-| select   | 选取 | mark        | 标记   |
-| copy     | 复制 | paste       | 粘贴   |
-| undo     | 撤销 | redo        | 重做   |
-| insert   | 插入 | delete      | 移除   |
-| add      | 加入 | append      | 添加   |
-| clean    | 清理 | clear       | 清除   |
-| index    | 索引 | sort        | 排序   |
-| find     | 查找 | search      | 搜索   |
-| increase | 增加 | decrease    | 减少   |
-| play     | 播放 | pause       | 暂停   |
-| launch   | 启动 | run         | 运行   |
-| compile  | 编译 | execute     | 执行   |
-| debug    | 调试 | trace       | 跟踪   |
-| observe  | 观察 | listen      | 监听   |
-| build    | 构建 | publish     | 发布   |
-| input    | 输入 | output      | 输出   |
-| encode   | 编码 | decode      | 解码   |
-| encrypt  | 加密 | decrypt     | 解密   |
-| compress | 压缩 | decompress  | 解压缩 |
-| pack     | 打包 | unpack      | 解包   |
-| parse    | 解析 | emit        | 生成   |
-| connect  | 连接 | disconnect  | 断开   |
-| send     | 发送 | receive     | 接收   |
-| download | 下载 | upload      | 上传   |
-| refresh  | 刷新 | synchronize | 同步   |
-| update   | 更新 | revert      | 复原   |
-| lock     | 锁定 | unlock      | 解锁   |
-| check    | out  | check       | in     |
-| submit   | 提交 | commit      | 交付   |
-| push     | 推   | pull        | 拉     |
-| expand   | 展开 | collapse    | 折叠   |
-| begin    | 起始 | end         | 结束   |
-| start    | 开始 | finish      | 完成   |
-| enter    | 进入 | exit        | 退出   |
-| abort    | 放弃 | quit        | 离开   |
-| obsolete | 废弃 | depreciate  | 废旧   |
-| collect  | 收集 | aggregate   | 聚集   |
 
 ## 其他
 
