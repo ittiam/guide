@@ -47,7 +47,7 @@ npm install babel-preset-mixup --save-dev
 项目配置 .eslintrc
 
 ```bash
-npm install eslint babel-eslint  eslint-config-mixup --save-dev
+npm install eslint babel-eslint  eslint-config-mixup eslint-plugin-prettier --save-dev
 ```
 
 [配置参考](https://github.com/ittiam/mixup/blob/master/packages/eslint-config-mixup/README.md)
@@ -56,6 +56,7 @@ npm install eslint babel-eslint  eslint-config-mixup --save-dev
 // .eslintrc.js
 module.exports = {
   extends: ['mixup'],
+  plugins: ['prettier'],
   env: {
     // 你的环境变量（包含多个预定义的全局变量）
     //
@@ -72,6 +73,7 @@ module.exports = {
   },
   rules: {
     // 自定义你的规则
+    'prettier/prettier': 'error',
   },
 };
 ```
