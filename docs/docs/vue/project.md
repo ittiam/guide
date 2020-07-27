@@ -21,7 +21,7 @@ src                               源码目录
 |-- router                           路由，统一管理
 |-- store                            vuex, 统一管理
 |-- themes                           自定义样式主题
-|-- util                             工具库
+|-- utils                            工具库
 |-- views                            视图目录
 |   |-- role                             role模块名
 |   |-- |-- RoleList.vue                    role 列表页面
@@ -114,34 +114,34 @@ assets 为静态资源，里面存放 images, styles, icons 等静态资源，�
 export const EMPLOYEE_STATUS = {
   NORMAL: {
     value: 1,
-    desc: "正常",
+    desc: '正常',
   },
   DISABLED: {
     value: 1,
-    desc: "禁用",
+    desc: '禁用',
   },
   DELETED: {
     value: 2,
-    desc: "已删除",
+    desc: '已删除',
   },
 };
 
 export const EMPLOYEE_ACCOUNT_TYPE = {
   QQ: {
     value: 1,
-    desc: "QQ登录",
+    desc: 'QQ登录',
   },
   WECHAT: {
     value: 2,
-    desc: "微信登录",
+    desc: '微信登录',
   },
   DINGDING: {
     value: 3,
-    desc: "钉钉登录",
+    desc: '钉钉登录',
   },
   USERNAME: {
     value: 4,
-    desc: "用户名密码登录",
+    desc: '用户名密码登录',
   },
 };
 
