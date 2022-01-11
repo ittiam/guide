@@ -1,4 +1,5 @@
-title: 提问的智慧
+# 提问的智慧
+
 ---
 
 > 本手册参考自 [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
