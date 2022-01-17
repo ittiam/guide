@@ -36,7 +36,7 @@ npm install --save-dev commitizen @wpg/cz-format
 {
   "config": {
     "commitizen": {
-      "path": "cz-format-extension"
+      "path": "@wpg/cz-format"
     }
   }
 }
@@ -61,7 +61,7 @@ module.exports = {
 ## 项目创建
 
 ```bash
-npm install -g @vue/cli-service-global
+npm install -g @vue/cli
 ```
 
 ```bash
@@ -446,6 +446,7 @@ npm install --save-dev stylelint @wpg/stylelint-config
   "prettier.printWidth": 120, // 设置每行可容纳字符数
   "prettier.useTabs": false, // 设置是否使用tab键缩进行，默认为false，即不使用
   "prettier.bracketSpacing": true, // 在对象，括号与文字之间加空格 true - Example: { foo: bar }   false - Example: {foo: bar}， 默认为true
+  "prettier.trailingComma": "none",
   "prettier.jsxBracketSameLine": true
 }
 
