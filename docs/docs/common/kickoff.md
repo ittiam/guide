@@ -16,6 +16,48 @@
 
 ## GIT 规范
 
+```bash
+npm install --save-dev commitizen @wpg/cz-format
+```
+
+创建一个 `.czrc` 或者在 package.json 添加 `config`
+
+`.czrc`
+
+```json
+{
+  "path": "@wpg/cz-format"
+}
+```
+
+`package.json`
+
+```json
+{
+  "config": {
+    "commitizen": {
+      "path": "cz-format-extension"
+    }
+  }
+}
+```
+
+创建 `.czferc.js`
+
+```javascript
+module.exports = {
+  questions({inquirer, gitInfo}) {
+    return [
+      {...},
+      {...},
+    ]
+  },
+  commitMessage({answers, gitInfo}) {
+    return ...
+  }
+}
+```
+
 ## 项目创建
 
 ```bash
@@ -33,12 +75,22 @@ vue create hello-world
 ### babel
 
 ```bash
-npm install babel-preset-mixup --save-dev
+npm install @babel/preset-env @vue/cli-plugin-babel --save-dev
 ```
 
 ```json
 {
-  "presets": ["mixup"]
+  "presets": [
+    "@vue/cli-plugin-babel/preset",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": []
 }
 ```
 
@@ -47,34 +99,54 @@ npm install babel-preset-mixup --save-dev
 项目配置 .eslintrc
 
 ```bash
-npm install eslint babel-eslint  eslint-config-mixup eslint-plugin-prettier --save-dev
+npm install eslint @wpg/eslint-config --save-dev
 ```
 
-[配置参考](https://github.com/ittiam/mixup/blob/master/packages/eslint-config-mixup/README.md)
+[配置参考](http://10.10.102.223/WPG_SRC_WEB/eslint-config/blob/master/README.md)
 
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ['mixup'],
-  plugins: ['prettier'],
-  env: {
-    // 你的环境变量（包含多个预定义的全局变量）
-    //
-    // browser: true,
-    // node: true,
-    // mocha: true,
-    // jest: true,
-    // jquery: true
-  },
-  globals: {
-    // 你的全局变量（设置为 false 表示它不允许被重新赋值）
-    //
-    // myGlobal: false
-  },
-  rules: {
-    // 自定义你的规则
-    'prettier/prettier': 'error',
-  },
+  extends: ['@wpg']
+};
+```
+
+### vue
+
+```bash
+npm install eslint @wpg/eslint-config-vue --save-dev
+```
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@wpg/vue']
+};
+```
+
+### typescript
+
+```bash
+npm install eslint @wpg/eslint-config-ts --save-dev
+```
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@wpg/ts']
+};
+```
+
+### typescript & vue
+
+```bash
+npm install eslint @wpg/eslint-config-ts @wpg/eslint-config-vue-ts --save-dev
+```
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@wpg/ts', '@wpg/vue-ts']
 };
 ```
 
@@ -83,31 +155,42 @@ module.exports = {
 配置 .stylelintrc
 
 ```bash
-npm install --save-dev stylelint stylelint-config-mixup
+npm install --save-dev stylelint @wpg/stylelint-config
 ```
 
 ```json
 {
   "extends": [
     // other configs ...
-    "stylelint-config-mixup"
+    "@wpg/stylelint-config"
   ]
 }
 ```
 
 ### prettier
 
-```
-npm install prettier-eslint prettier-stylelint --save-dev
-```
-
 配置 .prettierrc
 
 ```json
 {
-  "printWidth": 100,
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
   "semi": true,
-  "singleQuote": true
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "preserve",
+  "htmlWhitespaceSensitivity": "css",
+  "vueIndentScriptAndStyle": false,
+  "endOfLine": "lf",
+  "embeddedLanguageFormatting": "auto"
 }
 ```
 
@@ -117,6 +200,21 @@ npm install prettier-eslint prettier-stylelint --save-dev
 
 1. 安装插件 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 2. 同步配置 https://gist.github.com/ittiam/0fc51ecd8295fe682836e58b02da5bcb
+
+通过配置 .vscode/settings.json 来支持自动修复 Prettier 和 ESLint 错误：
+
+```json
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
 
 配置 jsconfig.json
 
@@ -143,22 +241,23 @@ npm install prettier-eslint prettier-stylelint --save-dev
   // ===
   // Editor
   // ===
-  "editor.fontFamily": "'Microsoft YaHei Mono', 'Fira Code'",
+  "editor.fontFamily": "'Consolas', 'LXGW WenKai'",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
-  "editor.renderIndentGuides": false,
   "editor.snippetSuggestions": "top",
-  "editor.rulers": [80, 100],
+  "editor.rulers": [100, 120],
+  "editor.inlineSuggest.enabled": true,
 
   // ===
   // Workbench
   // ===
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
 
   // ===
   // Spacing
@@ -167,6 +266,12 @@ npm install prettier-eslint prettier-stylelint --save-dev
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.trimAutoWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
 
@@ -176,63 +281,112 @@ npm install prettier-eslint prettier-stylelint --save-dev
   "files.exclude": {
     "**/*.log": true,
     "**/*.log*": true,
-    "**/dist": true,
     "**/coverage": true
   },
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "filesize.showGzip": false,
   "files.associations": {
-    ".markdownlintrc": "jsonc"
+    ".markdownlintrc": "jsonc",
+    "*.nvue": "vue"
   },
 
   // ===
   // Event Triggers
   // ===
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.fixAll.markdownlint": true
+  // 设置各种代码的默认格式化器//以下为默认配置
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.validate": ["javascript", "javascriptreact", "vue", "vue-html", "html"],
-  "vetur.format.enable": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ===
+  // ESLINT
+  // ===
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+
+  // ===
+  // VETUR
+  // ===
+  "vetur.format.enable": true, // 设置是否禁用插件格式化功能 // 默认为true，即开启
+  "vetur.format.defaultFormatter.css": "prettier", // 设置css代码(<style>包含的代码块）默认格式化器
+  "vetur.format.defaultFormatter.sass": "sass-formatter",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.html": "prettier", // 设置html代码(<template>包含的代码块)默认格式化器
+  "vetur.format.defaultFormatter.js": "prettier-eslint", // 设置js代码<script>包含的代码块）默认格式化器
+  "vetur.format.defaultFormatter.ts": "prettier", // 设置vetur默认使用 prettier格式化代码
+  "vetur.format.options.tabSize": 2, // 设置tab键占用的空格数，该配置将被所有格式化器继承
+  "vetur.format.options.useTabs": false, // 设置是否使用tab键缩进 默认false，即不使用，该配置将被所有格式化器继承
 
   // ===
   // HTML
   // ===
   "html.format.enable": false,
-  "vetur.validation.template": false,
   "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "vue-html": "html"
-  },
+  "vetur.validation.template": true,
   "vetur.completion.tagCasing": "initial",
 
   // ===
   // JS(ON)
   // ===
-  "jest.autoEnable": false,
-  "jest.enableCodeLens": false,
   "javascript.format.enable": false,
+  "typescript.format.enable": false,
   "json.format.enable": false,
-  "vetur.validation.script": false,
+  "vetur.validation.script": true,
 
   // ===
   // CSS
   // ===
   "stylelint.enable": true,
   "css.validate": false,
+  "less.validate": false,
   "scss.validate": false,
-  "vetur.validation.style": false,
+  "vetur.validation.style": true,
+  "stylelint.validate": [
+    "css",
+    "html",
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "source.css.styled",
+    "source.markdown.math",
+    "styled-css",
+    "sugarss",
+    "vue",
+    "vue-html",
+    "vue-postcss"
+  ],
 
   // ===
   // MARKDOWN
   // ===
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100
+    "editor.wordWrapColumn": 120,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
 
   // ===
@@ -246,12 +400,8 @@ npm install prettier-eslint prettier-stylelint --save-dev
     "suppressFileNotUnderSourceControlWarning": false,
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
+    "suppressNoRepositoryWarning": false
   },
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
 
   // ===
   // Terminal
@@ -289,7 +439,14 @@ npm install prettier-eslint prettier-stylelint --save-dev
   // ===
   // Prettier
   // ===
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 100
+  "prettier.enable": true, // 设置是否开启prettier插件，默认为true，即开启
+  "prettier.semi": false, // 设置是否在每行末尾添加分号，默认为 true
+  "prettier.singleQuote": true, // 设置格式化时，保持单引号，如果设置为true，则单引号会自动变成双引号
+  "prettier.tabWidth": 2, // 设置每个tab占用多少个空格
+  "prettier.printWidth": 120, // 设置每行可容纳字符数
+  "prettier.useTabs": false, // 设置是否使用tab键缩进行，默认为false，即不使用
+  "prettier.bracketSpacing": true, // 在对象，括号与文字之间加空格 true - Example: { foo: bar }   false - Example: {foo: bar}， 默认为true
+  "prettier.jsxBracketSameLine": true
 }
+
 ```
