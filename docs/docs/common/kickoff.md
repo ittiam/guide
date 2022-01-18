@@ -228,13 +228,13 @@ module.exports = {
 ### typescript & vue
 
 ```bash
-npm install eslint@7 @wpg/eslint-config-ts @wpg/eslint-config-vue-ts --save-dev
+npm install eslint@7 @wpg/eslint-config-vue-ts --save-dev
 ```
 
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ['@wpg/ts', '@wpg/vue-ts']
+  extends: ['@wpg/vue-ts']
 };
 ```
 
