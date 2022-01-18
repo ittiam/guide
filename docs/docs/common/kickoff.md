@@ -93,6 +93,17 @@ $RECYCLE.BIN/
 
 ### 代码提交规范
 
+- 全局安装 `commitizen`
+
+```bash
+$ npm install -g commitizen @wpg/cz-format
+```
+
+- 使用 `git cz` 替代 `git commit`
+
+
+项目配置 `cz-format`
+
 ```bash
 npm install --save-dev commitizen @wpg/cz-format
 ```
@@ -268,7 +279,7 @@ node_modules
   "trailingComma": "none",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "arrowParens": "always",
+  "arrowParens": "avoid",
   "requirePragma": false,
   "insertPragma": false,
   "proseWrap": "preserve",
@@ -420,6 +431,7 @@ node_modules
   // ===
   "editor.formatOnSave": true,
   // 设置各种代码的默认格式化器//以下为默认配置
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -432,28 +444,35 @@ node_modules
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    }
   },
 
   // ===
   // ESLINT
   // ===
-  "eslint.format.enable": true,
+  "eslint.enable": true,
   "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
 
   // ===
   // VETUR
   // ===
-  "vetur.format.enable": true, // 设置是否禁用插件格式化功能 // 默认为true，即开启
+  "vetur.format.enable": false, // 设置是否禁用插件格式化功能 // 默认为true，即开启
   "vetur.format.defaultFormatter.css": "prettier", // 设置css代码(<style>包含的代码块）默认格式化器
-  "vetur.format.defaultFormatter.sass": "sass-formatter",
   "vetur.format.defaultFormatter.postcss": "prettier",
   "vetur.format.defaultFormatter.scss": "prettier",
   "vetur.format.defaultFormatter.less": "prettier",
@@ -463,13 +482,14 @@ node_modules
   "vetur.format.defaultFormatter.ts": "prettier", // 设置vetur默认使用 prettier格式化代码
   "vetur.format.options.tabSize": 2, // 设置tab键占用的空格数，该配置将被所有格式化器继承
   "vetur.format.options.useTabs": false, // 设置是否使用tab键缩进 默认false，即不使用，该配置将被所有格式化器继承
+  "vetur.languageFeatures.codeActions": false,
 
   // ===
   // HTML
   // ===
   "html.format.enable": false,
   "emmet.triggerExpansionOnTab": true,
-  "vetur.validation.template": true,
+  "vetur.validation.template": false,
   "vetur.completion.tagCasing": "initial",
 
   // ===
@@ -478,7 +498,7 @@ node_modules
   "javascript.format.enable": false,
   "typescript.format.enable": false,
   "json.format.enable": false,
-  "vetur.validation.script": true,
+  "vetur.validation.script": false,
 
   // ===
   // CSS
@@ -487,7 +507,7 @@ node_modules
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "vetur.validation.style": true,
+  "vetur.validation.style": false,
   "stylelint.validate": [
     "css",
     "html",
@@ -564,14 +584,11 @@ node_modules
   // Prettier
   // ===
   "prettier.enable": true, // 设置是否开启prettier插件，默认为true，即开启
-  "prettier.semi": false, // 设置是否在每行末尾添加分号，默认为 true
   "prettier.singleQuote": true, // 设置格式化时，保持单引号，如果设置为true，则单引号会自动变成双引号
+  "prettier.jsxSingleQuote": false,
   "prettier.tabWidth": 2, // 设置每个tab占用多少个空格
   "prettier.printWidth": 120, // 设置每行可容纳字符数
-  "prettier.useTabs": false, // 设置是否使用tab键缩进行，默认为false，即不使用
-  "prettier.bracketSpacing": true, // 在对象，括号与文字之间加空格 true - Example: { foo: bar }   false - Example: {foo: bar}， 默认为true
   "prettier.trailingComma": "none",
-  "prettier.jsxBracketSameLine": true
+  "prettier.arrowParens": "avoid"
 }
-
 ```
