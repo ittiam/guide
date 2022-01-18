@@ -173,10 +173,10 @@ npm install @babel/preset-env @vue/cli-plugin-babel --save-dev
 
 ### eslint
 
-项目配置 .eslintrc.js
+项目配置 .eslintrc.js ， 如果 `@vue/cli-service` 版本 `<= 4.5.0`, 请使用 `eslint@7`
 
 ```bash
-npm install eslint @wpg/eslint-config --save-dev
+npm install eslint@7 @wpg/eslint-config --save-dev
 ```
 
 [配置参考](http://10.10.102.223/WPG_SRC_WEB/eslint-config/blob/master/README.md)
@@ -191,7 +191,7 @@ module.exports = {
 ### vue
 
 ```bash
-npm install eslint @wpg/eslint-config-vue --save-dev
+npm install eslint@7 @wpg/eslint-config-vue --save-dev
 ```
 
 ```javascript
@@ -204,7 +204,7 @@ module.exports = {
 ### typescript
 
 ```bash
-npm install eslint @wpg/eslint-config-ts --save-dev
+npm install eslint@7 @wpg/eslint-config-ts --save-dev
 ```
 
 ```javascript
@@ -217,7 +217,7 @@ module.exports = {
 ### typescript & vue
 
 ```bash
-npm install eslint @wpg/eslint-config-ts @wpg/eslint-config-vue-ts --save-dev
+npm install eslint@7 @wpg/eslint-config-ts @wpg/eslint-config-vue-ts --save-dev
 ```
 
 ```javascript
