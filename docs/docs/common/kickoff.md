@@ -309,9 +309,6 @@ node_modules
 
 ### vscode
 
-1. 安装插件 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
-2. 同步配置 https://gist.github.com/ittiam/0fc51ecd8295fe682836e58b02da5bcb
-
 通过配置 .vscode/settings.json 来支持自动修复 Prettier 和 ESLint 错误：
 
 ```json
