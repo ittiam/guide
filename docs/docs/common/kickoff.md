@@ -269,7 +269,7 @@ node_modules
 
 ```json
 {
-  "printWidth": 100,
+  "printWidth": 80,
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
@@ -584,7 +584,7 @@ node_modules
   "prettier.singleQuote": true, // 设置格式化时，保持单引号，如果设置为true，则单引号会自动变成双引号
   "prettier.jsxSingleQuote": false,
   "prettier.tabWidth": 2, // 设置每个tab占用多少个空格
-  "prettier.printWidth": 100, // 设置每行可容纳字符数
+  "prettier.printWidth": 80, // 设置每行可容纳字符数
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid"
 }
