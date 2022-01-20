@@ -269,7 +269,7 @@ node_modules
 
 ```json
 {
-  "printWidth": 80,
+  "printWidth": 100,
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
@@ -399,6 +399,7 @@ node_modules
   "editor.detectIndentation": false,
   "editor.trimAutoWhitespace": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll": false,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
@@ -438,37 +439,26 @@ node_modules
   "[less]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
+  "[javascript|react]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
+  "[typescript|react]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": false
-    }
   },
 
   // ===
   // ESLINT
   // ===
   "eslint.enable": true,
-  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
 
   // ===
   // VETUR
   // ===
-  "vetur.format.enable": false, // 设置是否禁用插件格式化功能 // 默认为true，即开启
+  "vetur.format.enable": true, // 设置是否禁用插件格式化功能 // 默认为true，即开启
   "vetur.format.defaultFormatter.css": "prettier", // 设置css代码(<style>包含的代码块）默认格式化器
   "vetur.format.defaultFormatter.postcss": "prettier",
   "vetur.format.defaultFormatter.scss": "prettier",
@@ -478,8 +468,6 @@ node_modules
   "vetur.format.defaultFormatter.js": "prettier-eslint", // 设置js代码<script>包含的代码块）默认格式化器
   "vetur.format.defaultFormatter.ts": "prettier", // 设置vetur默认使用 prettier格式化代码
   "vetur.format.options.tabSize": 2, // 设置tab键占用的空格数，该配置将被所有格式化器继承
-  "vetur.format.options.useTabs": false, // 设置是否使用tab键缩进 默认false，即不使用，该配置将被所有格式化器继承
-  "vetur.languageFeatures.codeActions": false,
 
   // ===
   // HTML
@@ -526,7 +514,7 @@ node_modules
   // ===
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 100,
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
 
@@ -584,8 +572,9 @@ node_modules
   "prettier.singleQuote": true, // 设置格式化时，保持单引号，如果设置为true，则单引号会自动变成双引号
   "prettier.jsxSingleQuote": false,
   "prettier.tabWidth": 2, // 设置每个tab占用多少个空格
-  "prettier.printWidth": 80, // 设置每行可容纳字符数
+  "prettier.printWidth": 100, // 设置每行可容纳字符数
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid"
 }
+
 ```
