@@ -114,7 +114,7 @@ npm install --save-dev commitizen @wpg/cz-format
 
 ```json
 {
-  "path": "@wpg/cz-format"
+  "path": "node_modules/@wpg/cz-format"
 }
 ```
 
@@ -124,7 +124,7 @@ npm install --save-dev commitizen @wpg/cz-format
 {
   "config": {
     "commitizen": {
-      "path": "@wpg/cz-format"
+      "path": "node_modules/@wpg/cz-format"
     }
   }
 }
