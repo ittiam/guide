@@ -215,7 +215,7 @@ module.exports = {
 ### typescript
 
 ```bash
-npm install eslint@7 @wpg/eslint-config-ts --save-dev
+npm install eslint @wpg/eslint-config-ts --save-dev
 ```
 
 ```javascript
@@ -228,7 +228,7 @@ module.exports = {
 ### typescript & vue
 
 ```bash
-npm install eslint@7 @babel/core @babel/eslint-parser @wpg/eslint-config-vue-ts --save-dev
+npm install eslint @babel/core @babel/eslint-parser @wpg/eslint-config-vue-ts --save-dev
 ```
 
 ```javascript
@@ -265,6 +265,10 @@ node_modules
 
 ### prettier
 
+```bash
+npm install --save-dev prettier
+```
+
 配置 .prettierrc
 
 ```json
@@ -274,19 +278,10 @@ node_modules
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "quoteProps": "as-needed",
   "jsxSingleQuote": false,
   "trailingComma": "none",
-  "bracketSpacing": true,
-  "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "requirePragma": false,
-  "insertPragma": false,
-  "proseWrap": "preserve",
-  "htmlWhitespaceSensitivity": "css",
-  "vueIndentScriptAndStyle": false,
-  "endOfLine": "lf",
-  "embeddedLanguageFormatting": "auto"
+  "vueIndentScriptAndStyle": true
 }
 ```
 
@@ -316,11 +311,36 @@ node_modules
   "files.eol": "\n",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
+  "prettier.enable": true,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
   }
 }
 ```
@@ -344,25 +364,47 @@ node_modules
 
 ```json
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
+    "strict": true,
+    "noLib": false,
+    "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "strictFunctionTypes": false,
+    "jsx": "preserve",
     "baseUrl": ".",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext"],
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "removeComments": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
     }
-  }
+  },
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "release", "**/*.js"]
 }
 ```
 
@@ -373,9 +415,9 @@ node_modules
   // ===
   // Editor
   // ===
-  "editor.fontFamily": "'Consolas', 'LXGW WenKai'",
+  "editor.fontFamily": "'Input Mono', 'LXGW WenKai'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
@@ -387,9 +429,9 @@ node_modules
   // ===
   // Workbench
   // ===
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Gruvbox Light Hard",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.productIconTheme": "icons-carbon",
 
   // ===
   // Spacing
@@ -423,37 +465,73 @@ node_modules
     ".markdownlintrc": "jsonc",
     "*.nvue": "vue"
   },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/release/**": true,
+    "**/es/**": true,
+    "**/lib/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
 
   // ===
   // Event Triggers
   // ===
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   // 设置各种代码的默认格式化器//以下为默认配置
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[html]": {
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[css]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[less]": {
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript|react]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript|react]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // ===
   // ESLINT
   // ===
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
   "eslint.enable": true,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+  "eslint.quiet": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
 
   // ===
   // VETUR
@@ -514,7 +592,7 @@ node_modules
   // ===
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
+    "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
 
@@ -523,19 +601,52 @@ node_modules
   // ===
   "git.autofetch": true,
   "git.enableSmartCommit": true,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
   },
-
-  // ===
-  // Terminal
-  // ===
-  "terminal.integrated.fontSize": 15,
 
   // ===
   // Plugins
@@ -561,20 +672,67 @@ node_modules
   "sync.quietSync": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
 
   // ===
   // Prettier
   // ===
-  "prettier.enable": true, // 设置是否开启prettier插件，默认为true，即开启
+  "prettier.enable": false, // 设置是否开启prettier插件，默认为true，即开启
   "prettier.singleQuote": true, // 设置格式化时，保持单引号，如果设置为true，则单引号会自动变成双引号
   "prettier.jsxSingleQuote": false,
   "prettier.tabWidth": 2, // 设置每个tab占用多少个空格
   "prettier.printWidth": 100, // 设置每行可容纳字符数
-  "prettier.trailingComma": "none",
-  "prettier.arrowParens": "avoid"
-}
+  "prettier.trailingComma": "none", // 设置是否使用尾逗号，none：不使用，es5：使用es5规则，all：使用所有规则
+  "prettier.arrowParens": "avoid",
+  "prettier.proseWrap": "never",
+  "prettier.vueIndentScriptAndStyle": true,
 
+  "code-runner.clearPreviousOutput": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  "i18n-ally.autoDetection": false,
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.ignoredLocales": [],
+  "explorer.experimental.fileNesting.enabled": true,
+  "explorer.experimental.fileNesting.expand": false,
+  "explorer.experimental.fileNesting.patterns": {
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "*.js": "$(capture).js.map, $(capture).min.js, $(capture).d.ts",
+    "*.jsx": "$(capture).js",
+    "*.ts": "$(capture).js, $(capture).*.ts",
+    "*.tsx": "$(capture).ts",
+    "*.vue": "$(capture).*.ts, $(capture).*.js",
+    "index.d.ts": "*.d.ts",
+    "shims.d.ts": "*.d.ts",
+    "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.c": "$(capture).h",
+    "go.mod": ".air*, go.sum",
+    "default.nix": "shell.nix",
+    "flake.nix": "flake.lock",
+    "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, WORKSPACE",
+    "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json",
+    ".clang-tidy": ".clang-format",
+    ".env": "*.env, .env.*, env.d.ts",
+    "dockerfile": ".dockerignore, dockerfile*",
+    "package.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
+    "rush.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
+    "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
+    "cargo.toml": ".clippy.toml, .rustfmt.toml, cargo.lock, clippy.toml, cross.toml, rust-toolchain.toml, rustfmt.toml",
+    "gemfile": ".ruby-version, gemfile.lock",
+    "composer.json": "composer.lock, phpunit.xml*, psalm*.xml",
+    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, index.html, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
+  },
+  "workbench.tree.indent": 12,
+  "terminal.integrated.fontSize": 13,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editor.splitInGroupLayout": "vertical"
+}
 ```
