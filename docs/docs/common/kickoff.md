@@ -736,3 +736,34 @@ npm install --save-dev prettier
   "workbench.editor.splitInGroupLayout": "vertical"
 }
 ```
+
+`extensions.json`
+
+```
+{
+  "recommendations": [
+    "antfu.browse-lite",
+    "antfu.icons-carbon",
+    "antfu.theme-vitesse",
+    "antfu.where-am-i",
+    "eamodio.gitlens",
+    "Equinusocio.vsc-material-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "file-icons.file-icons",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "jdinhlife.gruvbox",
+    "sainnhe.gruvbox-material",
+    "streetsidesoftware.code-spell-checker",
+    "johnsoncodehk.volar",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-less",
+    "lokalise.i18n-ally",
+    "mikestead.dotenv",
+    "heybourn.headwind"
+  ]
+}
+```
