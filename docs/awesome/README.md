@@ -1,11 +1,5 @@
 # 收藏集
 
-<div align="center">
-
-  <p>:heart: 收藏列表 - :+1: 很棒的开源项目，网站，书籍，软件等资源。</p>
-  <p><i>Favorites list - awesome open source projects, websites, books, software etc.</i></p>
-</div>
-
 ## 在线工具
 
 *Online tools, tools that can be used directly on the web page.*
