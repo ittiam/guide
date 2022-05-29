@@ -89,7 +89,11 @@ module.exports = {
             '/docs/awesome/reading',
             '/docs/awesome/software',
             '/docs/awesome/specifications',
+            '/docs/awesome/audio-video',
+            '/docs/awesome/lowcode',
+            '/docs/awesome/security',
             '/docs/awesome/vue',
+            '/docs/awesome/react',
           ]
         },
       ],
