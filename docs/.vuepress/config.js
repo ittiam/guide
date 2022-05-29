@@ -19,6 +19,10 @@ module.exports = {
         text: '文档',
         link: '/docs/',
       },
+      {
+        text: '技术集',
+        link: '/awesome/audio-video',
+      },
     ],
     sidebar: {
       '/docs': [
@@ -77,26 +81,23 @@ module.exports = {
             '/docs/name/htmlcss',
             '/docs/name/image',
           ],
-        },
-        {
-          title: '收藏列表',
-          children: [
-            '/docs/awesome/audio-video',
-            '/docs/awesome/gis',
-            '/docs/awesome/vue',
-            '/docs/awesome/react',
-            '/docs/awesome/lowcode',
-            '/docs/awesome/front-end',
-            '/docs/awesome/nodejs',
-            '/docs/awesome/cheat-sheet',
-            '/docs/awesome/data-visualization',
-            '/docs/awesome/security',
-            '/docs/awesome/specifications',
-            '/docs/awesome/software',
-            '/docs/awesome/reading',
-          ]
-        },
+        }
       ],
+      '/awesome': [
+        '/awesome/audio-video',
+        '/awesome/gis',
+        '/awesome/vue',
+        '/awesome/react',
+        '/awesome/lowcode',
+        '/awesome/front-end',
+        '/awesome/nodejs',
+        '/awesome/cheat-sheet',
+        '/awesome/data-visualization',
+        '/awesome/security',
+        '/awesome/specifications',
+        '/awesome/software',
+        '/awesome/reading'
+      ]
     },
     lastUpdated: 'Last Updated',
   },
