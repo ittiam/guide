@@ -1,12 +1,5 @@
 # Awesome Node.JS List
 
-<div align="center">
-  <p>:heart: 收藏列表 - :+1: 很棒的 Node.js 开发工具和生态技术。</p>
-  <p><i>Favorites list - great Node.js development tools and ecological technology.</i></p>
-</div>
-
-<br />
-
 > Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，使用了一个事件驱动、非阻塞式 I/O 的模型，为 JavaScript 提供了一个服务器端应用程序开发平台，:point_right: https://nodejs.org/ / https://nodejs.dev/
 
 [OpenJS Foundation](https://openjsf.org/) - 开源 JS 基金会，由 Node 基金会和 JS 基金会合并而成。

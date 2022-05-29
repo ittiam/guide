@@ -1,20 +1,5 @@
 # Awesome Development Technical Standard Specifications
 
-<div align="center">
-  <p>:heart: 收藏列表 - :+1: 技术标准规范。</p>
-  <p><i>Favorites list - technical standard specification.</i></p>
-</div>
-
-<br />
-
-## 目录
-
-*Resource navigation list.*
-
-- [协议（Protocol）](#协议)
-- [数据结构（Data Structure）](#数据结构)
-- [编程语言（Programming Language）](#编程语言)
-- [其它（Others）](#其它)
 
 ## 协议
 

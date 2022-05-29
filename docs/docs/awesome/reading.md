@@ -1,23 +1,5 @@
 # Awesome Reading List
 
-<div align="center">
-  <p>:heart: 收藏列表 - :+1: 很棒的读物，包括书籍、期刊、网站、论坛等。</p>
-  <p><i>Favorites list - great reading, including books, periodicals, websites, forums, etc.</i></p>
-</div>
-
-<br />
-
-## 目录
-
-*Resource navigation list.*
-
-- [数据（Data）](#数据)
-- [期刊（Journal）](#期刊)
-- [论坛（Forum）](#论坛)
-- [书籍（Book）](#书籍)
-- [文章(Article)](#文章)
-- [更多（More）](#更多)
-
 ## 数据
 
 *More reliable consulting, data statistics, industry analysis and reporting platform.*

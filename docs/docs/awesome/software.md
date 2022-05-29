@@ -1,21 +1,5 @@
 # Awesome Software
-<div align="center">
-  <p><i>Favorites list - great open source, free software and other resources.</i></p>
-  <p>:heart: 收藏列表 - :+1: 很棒的开源、免费软件等资源。</p>
-</div>
 
-## 目录
-
-*Resource navigation list.*
-
-- [应用程序商店（Application store）](#应用程序商店)
-- [软件包管理器（Software Package Manager）](#软件包管理器)
-- [Chrome 扩展程序（Chrome Extension）](#chrome-扩展程序)
-- [浏览器端（Web && PWA）](#浏览器端)
-- [安卓端（Android）](#安卓端)
-- [桌面端（Desktop）](#桌面端)
-- [操作系统（Operating System）](#操作系统)
-- [更多（More）](#更多)
 
 ## 应用程序商店
 
