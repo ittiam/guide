@@ -1,33 +1,8 @@
-# Awesome Node.JS List
+# Node.JS
 
 > Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，使用了一个事件驱动、非阻塞式 I/O 的模型，为 JavaScript 提供了一个服务器端应用程序开发平台，:point_right: https://nodejs.org/ / https://nodejs.dev/
 
 [OpenJS Foundation](https://openjsf.org/) - 开源 JS 基金会，由 Node 基金会和 JS 基金会合并而成。
-
-*（Recommend）推荐一个其它的很棒的收藏列表，:point_right: https://github.com/sindresorhus/awesome-nodejs*
-
-## 目录
-
-*Resource navigation list.*
-
-- [Awesome Node.JS List](#awesome-nodejs-list)
-  - [目录](#目录)
-  - [技术标准规范](#技术标准规范)
-  - [技术参考文档](#技术参考文档)
-  - [Node 版本管理](#node-版本管理)
-  - [Node 包管理](#node-包管理)
-  - [构建工具](#构建工具)
-  - [工具库](#工具库)
-  - [命令行工具](#命令行工具)
-  - [数据库](#数据库)
-  - [Web 框架](#web-框架)
-  - [内容管理系统](#内容管理系统)
-  - [桌面端开发](#桌面端开发)
-  - [深入探索](#深入探索)
-    - [引擎/运行时](#引擎运行时)
-    - [服务器优雅关机](#服务器优雅关机)
-  - [文章](#文章)
-  - [更多](#更多)
 
 ## 技术标准规范
 

@@ -1,4 +1,4 @@
-# Awesome Development Technical Standard Specifications
+# 技术标准规范
 
 
 ## 协议

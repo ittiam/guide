@@ -1,4 +1,4 @@
-# Awesome Development Cheat Sheet
+# 开发备忘单
 
 ## 备忘单
 

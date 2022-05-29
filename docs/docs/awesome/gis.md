@@ -1,4 +1,4 @@
-# Awesome GIS List
+# GIS
 
 ## 技术规范标准
 

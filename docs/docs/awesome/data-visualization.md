@@ -1,4 +1,4 @@
-# Awesome Data Visualization List
+# 数据可视化
 
 ## 参考文档
 
