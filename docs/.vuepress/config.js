@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         text: '技术集',
-        link: '/awesome/audio-video',
+        link: '/awesome/',
       },
     ],
     sidebar: {
@@ -84,6 +84,7 @@ module.exports = {
         }
       ],
       '/awesome': [
+        '/awesome/',
         '/awesome/audio-video',
         '/awesome/gis',
         '/awesome/vue',
