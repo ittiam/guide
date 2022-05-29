@@ -55,6 +55,12 @@ module.exports = {
           ],
         },
         {
+          title: 'TypeScript 规范',
+          children: [
+            '/docs/typescript/base'
+          ]
+        },
+        {
           title: 'VUE 规范',
           children: ['/docs/vue/code', '/docs/vue/router', '/docs/vue/project'],
         },
@@ -71,6 +77,20 @@ module.exports = {
             '/docs/name/htmlcss',
             '/docs/name/image',
           ],
+        },
+        {
+          title: '收藏列表',
+          children: [
+            '/docs/awesome/cheat-sheet',
+            '/docs/awesome/data-visualization',
+            '/docs/awesome/front-end',
+            '/docs/awesome/gis',
+            '/docs/awesome/nodejs',
+            '/docs/awesome/reading',
+            '/docs/awesome/software',
+            '/docs/awesome/specifications',
+            '/docs/awesome/vue',
+          ]
         },
       ],
     },
