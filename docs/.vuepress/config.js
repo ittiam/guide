@@ -89,6 +89,7 @@ module.exports = {
         '/awesome/gis',
         '/awesome/vue',
         '/awesome/react',
+        '/awesome/uniapp',
         '/awesome/front-end',
         '/awesome/nodejs',
         '/awesome/cheat-sheet',
