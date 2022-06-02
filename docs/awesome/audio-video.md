@@ -1,8 +1,8 @@
 # 音频/视频
 
-::: tip 说明
-推荐常用且优秀的音频/视频组件
-:::
+![音视核心技术.png](https://raw.githubusercontent.com/ty6815/AvStackDocs/master/%E9%9F%B3%E8%A7%86%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF.png)
+
+引用自 https://github.com/ty6815/AvStackDocs
 
 ## 前端
 
@@ -82,6 +82,6 @@ Vue3 的现代视觉视频播放器。它将使用可定制且功能强大的播
 
 ## 参考文档
 
-- [音视频基础知识整理和相关协议文档说明](https://github.com/ty6815/AvStackDocs)
 - [音视频编解码技术零基础学习方法](https://blog.csdn.net/leixiaohua1020/article/details/18893769)
 - [FFMPEG视音频编解码零基础学习方法](https://blog.csdn.net/leixiaohua1020/article/details/15811977)
+- [音视频基础知识整理和相关协议文档说明](https://github.com/ty6815/AvStackDocs)

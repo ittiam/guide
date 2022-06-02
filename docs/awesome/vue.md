@@ -97,34 +97,86 @@ _UI Design System, provides a base system for building a design system._
 *Independent UI components, only providing component modules that implement an interactive function.*
 
 - 表单（Form）
+  - [vue-dynamic-forms](https://github.com/asigloo/vue-dynamic-forms) - 快速创建表单
+  - [formkit](https://github.com/formkit/formkit) - Vue Forms ⚡️ Supercharged
+  - [vueform](https://vueform.com/)
+  - [ue-ele-form](https://github.com/dream2023/vue-ele-form) - 基于element-ui的数据驱动表单组件
+  - [el-form-renderer](https://github.com/FEMessage/el-form-renderer) - A data-driven dynamic and complex form solution
+  - [vue-dynamic-form-component](https://github.com/chenquincy/vue-dynamic-form-component) - Vue动态多级表单组件，支持嵌套对象/Hashmap/数组
+  - [vue-form-builder](https://github.com/openfext/vue-form-builder) - Build powerful vue form with JSON schema and composition api.
+  - [avue-form-design](https://github.com/sscfaith/avue-form-design)
+  - [formast](https://github.com/tencent-cdc/formast) - 复杂业务场景下的企业级动态表单框架
+  - [variant-form](https://github.com/vform666/variant-form) - A powerful form designer for Vue
 
 - 表格（Table）
+  - [vxe-table](https://github.com/x-extends/vxe-table) - vue 表格解决方案
+  - [vue-tables](https://github.com/matfish2/vue-tables-2)
+  - [handsontable](https://github.com/handsontable/handsontable/tree/master/wrappers/vue) - JavaScript data grid with a spreadsheet look & feel
+  - [ag-grid](https://github.com/ag-grid/ag-grid) - The best JavaScript Data Table for building Enterprise Applications
 
 - 图表（Chart）
+  - [apexcharts](https://github.com/apexcharts/vue-apexcharts) - Vue.js component for ApexCharts
+  - [vue-echarts](https://github.com/ecomfe/vue-echarts) - 基于echarts封装实现的一个组件库
+  - [vue-chartjs](https://github.com/apertureless/vue-chartjs) - 对于 Chart.js 的封装
 
 - 时间日期选择器（DatePicker & TimePicker）
+  - [vue-datepicker](https://github.com/livelybone/vue-datepicker)
+  - [vue-datepicker-ui](https://github.com/edisdev/vue-datepicker-ui)
+  - [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker)
+  - [vue-datepicker](https://github.com/mengxiong10/vue-datepicker-next)
+  - [litepie-datepicker](https://github.com/kenhyuwa/litepie-datepicker)
 
 - 文件上传（File Upload）
+  - [vue-upload-component](https://github.com/lian-yue/vue-upload-component)
+  - [vue-filepond](https://github.com/pqina/vue-filepond)
 
 - 轮播（Carousel）
+  - [vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)
 
 - 图片（Image）
+  - [vue-pswipe](https://github.com/GuoQichen/vue-pswipe)
 
 - 颜色选择器（Color Picker）
+  - [vue-accessible-color-picker](https://github.com/kleinfreund/vue-accessible-color-picker)
+  - [one-colorpicker](https://github.com/one-view/one-colorpicker)
 
 - 拖拽（Draggable）
+  - [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)
+  - [vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout)
+  - [vue-draggable-resizable-gorkys](https://github.com/gorkys/vue-draggable-resizable-gorkys)
 
 - 大量数据渲染（Large amount of data rendering）
+  - [vue-virtual-scroll-list](https://github.com/tangbc/vue-virtual-scroll-list)
+  - [vue-virtual-scroller](https://github.com/Akryum/vue-virtual-scroller)
 
 - 动画（Animation）
+  - [vue-starport](https://github.com/antfu/vue-starport) - 🛰 Shared component across routes with animations
+  - [vue2-flip-countdown](https://github.com/philipjkim/vue2-flip-countdown)
+  - [vue3-flip-countdow](https://github.com/coskuncay/vue3-flip-countdown)
+  - [vue-stripe-menu](https://github.com/oleksiikhr/vue-stripe-menu) - Creating a navigation menu with animations like on Stripe
+  - [v-animate-css](https://github.com/jofftiquez/v-animate-css)
 
 - 二维码（QR Code）
+  - [vue-qrcode](https://github.com/fengyuanchen/vue-qrcode)
+  - [vue-qr](https://github.com/Binaryify/vue-qr)
 
 - 用户引导（User guided tours）
+  - [Driver.js](https://github.com/kamranahmedse/driver.js)
+  - [intro.js](https://github.com/usablica/intro.js)
 
 - 消息通知（Notification）
+  - [vue-toastification](https://github.com/Maronato/vue-toastification) - 轻巧、简单和漂亮的吐司提示
+  - [vue-toasted](https://github.com/shakee93/vue-toasted) - 响应性强，兼容性好
 
 - 编辑器（Editor）
+  - [tinymce](https://github.com/tinymce/tinymce) - The world's #1 JavaScript library for rich text editing
+  - [Ckeditor5](https://github.com/ckeditor/ckeditor5)
+  - [tiptap](https://github.com/Leecason/element-tiptap)
+  - [WangEditor](https://github.com/wangeditor-team/wangEditor)
+  - [Vditor](https://github.com/Vanessa219/vditor) - 浏览器端的 Markdown 编辑器
+  - [markdoc](https://github.com/markdoc/markdoc) - Stripe 开发的一个 Markdown 编辑器
+  - [bytemd](https://github.com/bytedance/bytemd) - 字节开发基于 Svelte
+  - [mdx-editor](https://github.com/maqi1520/mdx-editor) - 微信排版编辑器
 
 - 其它（Others）
 
@@ -135,10 +187,16 @@ _UI Design System, provides a base system for building a design system._
 - 懒加载、代码分割（Lazy Load && Code Split）
 
 - 服务器端渲染（SSR，server side rendering）
+  - [Nuxt.js](https://nuxtjs.org/) - Vue.js 服务器端渲染框架。
 
 - 国际化（i18n）
+  - [vue-i18n](https://github.com/kazupon/vue-i18n) - 🌐 Internationalization plugin for Vue.js
+  - [kiwi](https://github.com/alibaba/kiwi) - 国际化翻译全流程解决方案
+  - [di18n](https://github.com/didi/di18n) - 一种自动转换、基于配置的前端国际化方案
 
 - 加载占位符（Loading Placeholder）
+  - [vue-content-loader](https://github.com/egoist/vue-content-loader) - About
+SVG component to create placeholder loading, like Facebook cards loading.
 
 - 其它（Others）
 

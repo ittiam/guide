@@ -138,7 +138,10 @@ _Available in browser（JavaScript）. **Tips:** Most of what is available in th
   - [Mars3D](https://mars3d.cn/) - 基于 cesium 实现三维 GIS 平台
   - [SuperMap-iEarth](https://github.com/SuperMap/SuperMap-iEarth)
   - [cesium-map](https://github.com/dvgis/cesium-map) - Cesium 地图插件，用于添加国内各大地图厂商的地图
+  - [Earch-SDK](http://www.earthsdk.com/) - CesiumLab 的 EarthSDK
   - [dc-sdk](https://github.com/dvgis/dc-sdk) - 基于 Cesium 进行二次开发的2、3D一体 WebGis 应用框架
+  - [vue-cesium-v2](https://github.com/zouyaoji/vue-cesium-v2) - Vue 2.x & Vue 3.x components for CesiumJS.
+  - [vue-cesium](https://github.com/zouyaoji/vue-cesium) - Vue 3.x components for CesiumJS.
 
 - [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/overview/) - 基于 WebGL 技术的现代化地图引擎，**Mapbox 公司开发**。
   - [React Mapbox GL](https://uber.github.io/react-map-gl/) - 基于 React.js 集成了 Mapbox GL 的实现，**Uber 公司维护**。
