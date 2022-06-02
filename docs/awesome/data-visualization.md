@@ -5,6 +5,9 @@
 _Reference documentation._
 
 - [from Data to Viz](https://www.data-to-viz.com/) - 数据可视化决策工具。
+- [图之典](http://www.tuzhidian.com/)
+- [看见统计](https://seeing-theory.brown.edu/cn.html)
+- [Data visualization guide](https://github.com/nalgeon/dataviz)
 
 - 学习资料（Docs）
   - [Graphics Related Lessons](https://github.com/gfxfundamentals)
@@ -13,6 +16,30 @@ _Reference documentation._
     - [_Three.js Fundamentals_](https://threejs.org/manual/) - _Three.js 基础知识。_
   - [_WebGL Guide_](https://xem.github.io/articles/webgl-guide.html) - _WebGL 技术指南。_
 
+- 可视化素材
+  - [易知微](https://easyv.cloud/market)
+  - [big-screen-vue-data](https://gitee.com/MTrun/big-screen-vue-datav)
+  - [go-view](https://gitee.com/MTrun/go-view) _大屏可视化开发平台_
+  - [PPChart](http://ppchart.com/#/)
+  - [Echarts 图表](https://www.isqqw.com/#/homepage)
+  - [PoPo 数据可视化](http://www.popodv.com/)
+
+- 360 全景 (VR)
+  - [krpano](https://krpano.com/home/)
+  - [pannellum](https://pannellum.org/)
+  - [Pano2VR](https://ggnome.com/pano2vr/)
+  - [720yun](https://720yun.com/)
+
+- BI
+  - [DataEase](https://dataease.io/) _可视化开放平台_
+  - [DataArt](https://github.com/running-elephant/datart) _可视化开放平台_
+  - [Superset](https://superset.apache.org/) _可视化开放平台_
+  - [Matebase](https://www.metabase.com/) _可视化开放平台_
+  - [Directus](https://github.com/directus/directus) _可视化开放平台_
+
+- BI 阅读
+  - [前端与BI](https://github.com/ascoders/weekly/blob/v2/121.%E7%B2%BE%E8%AF%BB%E3%80%8A%E5%89%8D%E7%AB%AF%E4%B8%8E%20BI%E3%80%8B.md) _阅读_
+  - [BI 搭建 - 筛选条件](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/166.%E7%B2%BE%E8%AF%BB%E3%80%8ABI%20%E6%90%AD%E5%BB%BA%20-%20%E7%AD%9B%E9%80%89%E6%9D%A1%E4%BB%B6%E3%80%8B.md) _阅读_
 
 
 ## 工具库
@@ -143,5 +170,3 @@ _Reference documentation._
   - [dom-confetti](https://github.com/daniel-lundin/dom-confetti) - 五彩纸屑动画。
   - [Canvas Confetti](https://www.kirilv.com/canvas-confetti/) - 五彩纸屑动画。
   - [Vanta.js](https://www.vantajs.com/) - 数款页面 WebGL 背景动画。
-
-- :point_right: React.js

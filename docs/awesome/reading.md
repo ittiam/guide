@@ -226,6 +226,12 @@ _Computer Graphics._
 
 - 《HTML5 Canvas 核心技术》[美] David Geary
 
+#### 数据和BI
+
+_Data Analyse_
+
+- 《趣味数据分析》[豆瓣阅读]
+
 #### 数据库
 
 _Database._

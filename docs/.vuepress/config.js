@@ -89,13 +89,14 @@ module.exports = {
         '/awesome/gis',
         '/awesome/vue',
         '/awesome/react',
-        '/awesome/lowcode',
         '/awesome/front-end',
         '/awesome/nodejs',
         '/awesome/cheat-sheet',
         '/awesome/data-visualization',
+        '/awesome/lowcode',
         '/awesome/security',
         '/awesome/specifications',
+        '/awesome/vscode',
         '/awesome/software',
         '/awesome/reading'
       ]

@@ -185,3 +185,7 @@ _Available in browser（JavaScript）. **Tips:** Most of what is available in th
 - [GeoJSON.io](http://geojson.io/)
 - [Geospatial Data Cloud](http://www.gscloud.cn/)
 - [mapscii](https://github.com/rastapasta/mapscii) - 地图命令行渲染器，支持交互。
+- [datav](http://datav.aliyun.com/portal/school/atlas/area_selector) - 地图生成器，支持下载各省、市、县的svg格式的地图素材
+- [NB Map](https://nbcharts.com/) - 快速生成三维地图的免费工具，可以调整颜色、修改地图的厚度和角度、更换字体的样式，可下载。
+- [国家地球系统科学数据中心](http://www.geodata.cn/?continueFlag=740c13ccc6f5e61da65376ecf86139e3) - 提供丰富的气温、地形、降水、地质等图库资源。
+- [Earth](https://earth.nullschool.net/?continueFlag=740c13ccc6f5e61da65376ecf86139e3#current/wind/surface/level/orthographic=-240.00,0.00,544) - 实时模拟全球风向、洋流、天气效果，这个网站的可视化效果、配色都非常绝
