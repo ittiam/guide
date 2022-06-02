@@ -4,6 +4,8 @@
 
 *Online tools, tools that can be used directly on the web page.*
 
+[参考](https://github.com/wang1212/awesome-favorites-list)
+
 [全球时间（TIME.IS）](https://time.is/)
 
 - 实用工具（Utils）
