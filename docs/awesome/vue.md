@@ -90,6 +90,7 @@ _UI Design System, provides a base system for building a design system._
 - [naive-ui](https://github.com/TuSimple/naive-ui) - vue3
 - [varlet](https://github.com/varletjs/varlet) - vue3&material design
 - [varlet-vue2](https://github.com/varletjs/varlet-vue2) - vue2&material design
+- [vant](https://youzan.github.io/vant/#/zh-CN) - vue2&vue3
 
 ### 独立组件
 

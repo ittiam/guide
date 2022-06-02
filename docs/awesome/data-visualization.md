@@ -94,6 +94,7 @@ _Reference documentation._
 - 常规图表（Regular Chart）
   - [Chart.js](https://www.chartjs.org/) - 最流行的轻量级库。
   - [Echarts](http://echarts.apache.org/) - 国内百度团队开发，功能丰富。
+  - [G2](https://g2.antv.vision/zh) - 蚂蚁金服团队开发
   - [C3](https://c3js.org/) - 基于 D3.js 的可重用图表库。
   - [billboard.js](https://naver.github.io/billboard.js/) - 基于 D3.js 的图表库。
   - [Apexcharts](https://apexcharts.com/) - 图表库。

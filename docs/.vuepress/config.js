@@ -97,6 +97,7 @@ module.exports = {
         '/awesome/lowcode',
         '/awesome/security',
         '/awesome/specifications',
+        '/awesome/chrome',
         '/awesome/vscode',
         '/awesome/software',
         '/awesome/ppt',
