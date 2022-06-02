@@ -33,12 +33,13 @@
 - 代码质量分析（Lint）
   - [ESLint](https://eslint.org/) - 语法规则检查工具。
     - [eslint-plugin-vue](https://eslint.vuejs.org/) - ESLint 的 Vue.js 语法规则插件。
+  - [StyleLint](https://stylelint.io/) - CSS 代码检查器
   - [Prettier](https://prettier.io/) - 代码格式化工具。
-  - [Flow](https://flow.org/) - JavaScript 静态类型检查工具，**FaceBook 官方发布**。
 
 - 测试（Test）
   - [Jest](https://jestjs.io/) - 单元测试工具，**FaceBook 发布**。
   - [Vitest](https://github.com/vitest-dev/vitest) - 单元测试工具
+  - [Playwright](https://playwright.dev/) - 端到端 UI 测试工具, **微软 发布**
 
 - 文档（Document）
   - [VuePress](https://vuepress.vuejs.org/) - Webpack
