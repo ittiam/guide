@@ -7,7 +7,7 @@
 ## 前端
 
 ### Jessibuca
-一款开源的纯H5直播流播放器
+一款开源的纯H5直播流播放器，支持 h.265
 
 #### 资源地址
 - 官方文档：[官方文档地址](http://jessibuca.monibuca.com/)
@@ -66,14 +66,14 @@ Vue3 的现代视觉视频播放器。它将使用可定制且功能强大的播
 
 ## 后端
 
-## WEB VIDEO PLATFORM
+### WEB VIDEO PLATFORM
 一个基于GB28181-2016标准实现的网络视频平台，支持NAT穿透，支持海康、大华、宇视等品牌的IPC、NVR、DVR接入。支持国标级联，支持rtsp/rtmp等视频流转发到国标平台，支持rtsp/rtmp等推流转发到国标平台。
 
 #### 资源地址
 - 官方文档：[官方文档地址](https://github.com/648540858/wvp-GB28181-pro)
 - 仓库资源：[github地址](https://github.com/648540858/wvp-GB28181-pro)
 
-## ZLMediaKit
+### ZLMediaKit
 一个基于C++11的高性能运营级流媒体服务框架
 
 #### 资源地址
