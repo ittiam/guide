@@ -99,6 +99,7 @@ module.exports = {
         '/awesome/specifications',
         '/awesome/vscode',
         '/awesome/software',
+        '/awesome/ppt',
         '/awesome/reading'
       ]
     },
