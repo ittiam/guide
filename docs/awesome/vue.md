@@ -24,6 +24,7 @@
     - [vite-plugin-vue2](https://github.com/underfin/vite-plugin-vue2) - Vue2 plugin for Vite
     - [vue-vben-admin](https://github.com/anncwb/vue-vben-admin) - 基于 Vue3.0、Vite、 Ant-Design-Vue、TypeScript 的后台解决方案
     - [vite-vue2-windicss-starter](https://github.com/lstoeferle/vite-vue2-windicss-starter) - Vue 2 starter template using composition-api and windiCSS
+    - [vitesse](https://github.com/antfu/vitesse) - 🏕 Opinionated Vite Starter Template
   - [Babel](https://babeljs.io/) - TypeScript/ES Next 编译工具。
     - [@vue/cli-plugin-babel](https://cli.vuejs.org/core-plugins/babel.html) - babel plugin for vue-cli
     - [@vue/cli-plugin-typescript](https://cli.vuejs.org/core-plugins/typescript.html) - typescript plugin for vue-cli
@@ -132,6 +133,7 @@ _UI Design System, provides a base system for building a design system._
 
 - 轮播（Carousel）
   - [vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)
+  - [swiper](https://swiperjs.com/vue)
 
 - 图片（Image）
   - [vue-pswipe](https://github.com/GuoQichen/vue-pswipe)
@@ -144,6 +146,7 @@ _UI Design System, provides a base system for building a design system._
   - [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)
   - [vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout)
   - [vue-draggable-resizable-gorkys](https://github.com/gorkys/vue-draggable-resizable-gorkys)
+  - [vue-dnd-zone](https://github.com/supraniti/vue-dnd-zone)
 
 - 大量数据渲染（Large amount of data rendering）
   - [vue-virtual-scroll-list](https://github.com/tangbc/vue-virtual-scroll-list)
@@ -179,6 +182,7 @@ _UI Design System, provides a base system for building a design system._
   - [mdx-editor](https://github.com/maqi1520/mdx-editor) - 微信排版编辑器
 
 - 其它（Others）
+  - [splitpane](https://antoniandre.github.io/splitpane) - panes splitter / resizer
 
 ## 优化方案
 
