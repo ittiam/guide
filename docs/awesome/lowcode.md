@@ -1,7 +1,7 @@
 # 低代码
 
 ## 低代码厂商
-![低代码厂商](../assets/lowcode.webp)
+![低代码厂商](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/lowcode.webp)
 
 <div align="center">材料来源于iRearch</div>
 
@@ -24,7 +24,7 @@
 - 权限、角色设置标准化和业务化，通过策略规则配置来将数据、操作的权限进行精细化管理；
 - 无需关心服务器、数据库等底层运维、计算设施设备、网络等等复杂技术概念，具备安全、性能的统一解决方案，开发者只需要专注于业务本身；
 
-![名词解释](../assets/yuque_mind.jpg)
+![名词解释](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/yuque_mind.jpg)
 
 <div align="center">名词解释 - LowCode Engine</div>
 
