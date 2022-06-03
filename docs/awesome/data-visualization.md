@@ -37,10 +37,11 @@ _Reference documentation._
   - [Matebase](https://www.metabase.com/) _可视化开放平台_
   - [Directus](https://github.com/directus/directus) _可视化开放平台_
 
-- BI 阅读
+- 文章
   - [前端与BI](https://github.com/ascoders/weekly/blob/v2/121.%E7%B2%BE%E8%AF%BB%E3%80%8A%E5%89%8D%E7%AB%AF%E4%B8%8E%20BI%E3%80%8B.md) _阅读_
   - [BI 搭建 - 筛选条件](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/166.%E7%B2%BE%E8%AF%BB%E3%80%8ABI%20%E6%90%AD%E5%BB%BA%20-%20%E7%AD%9B%E9%80%89%E6%9D%A1%E4%BB%B6%E3%80%8B.md) _阅读_
-
+  - [交叉表](https://help.fanruan.com/finebi/doc-view-122.html)
+  - [什么是交叉表](https://docs.tibco.com/pub/spotfire_web_player/6.0.0-november-2013/zh-CN/WebHelp/GUID-1F67B2F3-056B-4324-B2CC-14D73D378693.html)
 
 ## 工具库
 

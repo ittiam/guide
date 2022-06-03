@@ -175,11 +175,13 @@ _UI Design System, provides a base system for building a design system._
   - [react-number-format](https://github.com/s-yadav/react-number-format) - 数字输入格式化。
   - [Downshift](https://www.downshift-js.com/) - 用来构建可访问的自动完成组件的底层组件。
   - [react-final-form](https://final-form.org/react)
+  - [xrender](https://xrender.fun/) - 「表单/表格/图表」开箱即用解决方案
 
 - 表格（Table）
   - [React Table](https://github.com/tannerlinsley/react-table)
   - [RevoGrid](https://revolist.github.io/revogrid/)
   - [React Table Library](https://react-table-library.com/)
+  - [ali-react-table](https://ali-react-table.js.org/) - 高性能 React 表格组件
 
 - 时间日期选择器（DatePicker & TimePicker）
   - [react-dates](https://github.com/airbnb/react-dates) - 国际化、移动端友好，**Airbnb 公司发布**。
