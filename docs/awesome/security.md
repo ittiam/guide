@@ -9,7 +9,7 @@
 - 服务器的安全：黑客可以模拟请求，对服务端进行恶意的访问，占据服务资源以影响正常的请求等手段让服务不可用
 
 
-![浏览器安全知识](https://github.com/ittiam/guide/blob/master/docs/assets/fl8xv0ugt2.png)
+![浏览器安全知识](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/fl8xv0ugt2.png)
 
 <div align="center">浏览器安全知识</div>
 
