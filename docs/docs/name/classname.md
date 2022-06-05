@@ -12,7 +12,7 @@ ClassName 的命名应该尽量精短、明确，必须以**字母开头命名**
 - `Element`：组成 `Block` 的一部分，没有具体的实际意义，一般也不独立使用，例如 menu item，list item，header title 等
 - `Modifier`：一般是块或者元素的修饰状态或者行为，例如 disabled，color，checked 等
 
-而 `BEM` 的写法一般是 `.block-name__element-name--modifier-name`，其中 `Block` 与 `Element` 之间连接是通过 __ `双下划线，Block，Element` 与 `Modifier` 之间是通过 `--` 双中划线进行连接，当使用 `less` 或者 `sass` 语法编写 `css` 时，通过嵌套语法也能够很简洁的书写这部分样式。
+而 `BEM` 的写法一般是 `.block-name__element-name--modifier-name`，其中 `Block` 与 `Element` 之间连接是通过 `__` 双下划线，`Block`，`Element` 与 `Modifier` 之间是通过 `--` 双中划线进行连接，当使用 `less` 或者 `sass` 语法编写 `css` 时，通过嵌套语法也能够很简洁的书写这部分样式。
 
 ```html
 <div class="head">
@@ -77,7 +77,7 @@ ClassName 的命名应该尽量精短、明确，必须以**字母开头命名**
 
 `BEM` 可以不需要用到原子类，但是如果已经引入了类似 `Windi CSS`、`Tailwind CSS`, and `Twind` 等原子框架，也没必要强制避免使用原子类，比如“pull-right”、"ellipsis"、“clearfix”等等类，这些类非常实用，和 `BEM` 是可以互补的。
 
-在组件开发中其实不推荐使用原子类，因为这会降低组件的可复用性。可复用性的最理想状态就是组件不仅仅在不同的页面中表现一致，在跨项目的情况下，也能够运行良好。如果组件的样式因为依赖于某几个原子类就要依赖整个Bootstrap库，那么组件的迁移负担就重很多了。
+在组件开发中其实不推荐使用原子类，因为这会降低组件的可复用性。可复用性的最理想状态就是组件不仅仅在不同的页面中表现一致，在跨项目的情况下，也能够运行良好。如果组件的样式因为依赖于某几个原子类就要依赖整个 `Bootstrap` 库，那么组件的迁移负担就重很多了。
 
 原子类更适合应用在实际页面中，这是因为页面变动大而且不可复用，假设在 `header` 中，我们用到了两个组件 `logo` 和 `user-panel`（用户操作面板），两个组件分别置于 `header` 的左侧和右侧，我们可以这么写：
 
@@ -100,7 +100,7 @@ ClassName 的命名应该尽量精短、明确，必须以**字母开头命名**
 
 在实际页面中也需要用到BEM命名方法，不然乱起的一个名字很可能就和某一组件冲突了，导致样式相互覆盖。
 
-假如我们有联系页面，路径是/pages/contact/。那么该页面的模块名可以是page-contact，其名下元素均以page-contact__element-name命名。
+假如我们有联系页面，路径是 `/pages/contact/` 。那么该页面的模块名可以是 `page-contact`，其名下元素均以 `page-contact__element-name` 命名。
 
 一般来说，实际页面中只是对组件进行调用，对组件的位置进行调整，但不会对组件内部细节进行修改。但实际情况下，同一个组件在不同页面不同模样的情况也是有的，所以会出现在实际页面中对组件样式进行微调的代码：
 
