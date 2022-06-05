@@ -36,6 +36,7 @@ _Reference documentation._
   - [Superset](https://superset.apache.org/) _可视化开放平台_
   - [Matebase](https://www.metabase.com/) _可视化开放平台_
   - [Directus](https://github.com/directus/directus) _可视化开放平台_
+  - [wazuh](https://github.com/wazuh/wazuh) _开源的安全平台_
 
 - 文章
   - [前端与BI](https://github.com/ascoders/weekly/blob/v2/121.%E7%B2%BE%E8%AF%BB%E3%80%8A%E5%89%8D%E7%AB%AF%E4%B8%8E%20BI%E3%80%8B.md) _阅读_
