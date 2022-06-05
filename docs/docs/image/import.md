@@ -7,10 +7,10 @@
 测试内容图应该写上表明图片尺寸的占位图，可以用线上占位图生成服务，如：
 
 ```html
-http://placeholder.qiniudn.com/300x200
+https://dummyimage.com/600x400/f1f1f1/002fff
 ```
 
-![image](http://placeholder.qiniudn.com/300x200)
+![image](https://dummyimage.com/600x400/f1f1f1/002fff)
 
 HTML 中图片引入不需添加 width、height 属性，alt 属性应该写上
 
