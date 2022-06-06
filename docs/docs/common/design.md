@@ -16,13 +16,13 @@
 
 功能性需求就是偏产品的，必要性的需求，比如说要做一个用户登录的功能，用户输入正确用户名密码可以登录，错误的用户名密码要提示错误信息。
 
-![](https://wx3.sinaimg.cn/mw2000/66fd066bgy1h2lbvmb8oyj20y018045k.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbvmb8oyj20y018045k.jpg)
 
 #### 1.1.2 非功能性需求（Non-Functional Requirements）
 
 非功能性需求就是偏技术的，并非是必须的，像安全性、可用性、可靠性等要求，比如说用户登录要防止Sql注入，要能承载1W用户同时登录。
 
-![](https://wx1.sinaimg.cn/mw2000/66fd066bgy1h2lbw7k09tj20y0180jyo.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbw7k09tj20y0180jyo.jpg)
 
 ### 1.2 前置概念
 
@@ -32,7 +32,7 @@
 
 在很多时候，我们都需要对技术进行选型，尤其是前端，框架太多，选React还是Vue？选Redux还是React Context？选JavaScript还是TypeScript？
 
-![](https://wx4.sinaimg.cn/mw2000/66fd066bgy1h2lbwem8a9j20y018011w.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbwem8a9j20y018011w.jpg)
 
 ### 1.4 设计范围（Scopes）
 
@@ -73,7 +73,7 @@
 
 概要设计其实不复杂，画几张框线图就可以描述清楚模块和模块之间的关系。
 
-![](https://wx3.sinaimg.cn/mw2000/66fd066bgy1h2lbwkiu5wj20y0180wm7.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbwkiu5wj20y0180wm7.jpg)
 
 ### 4.2 架构图
 
@@ -98,17 +98,28 @@
 
 比如你要在前端后端之间传输数据，各个数据实体的结构是怎么样的？数据实体的关系是怎么样的？这个一定要描述清楚，这样前后端可以更好协作，另外好的数据结构能带来更好的性能。
 
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbx31jy7j20y018043z.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxaa81yj20y0180tet.jpg)
+
 #### 5.1.3 组件结构
 
 作为前端项目，尤其是React这种，所有的UI都是由各种组件搭建起来的，但是当UI复杂的时候，怎么样组织、重用你的组件很考验设计，所以在系统设计文档中，要体现出你组件结构，以及组件和数据之间的关系。
+
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxketgsj20y01804b3.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxrj4bzj20y0180am9.jpg)
 
 #### 5.1.4 状态管理
 
 在现代前端框架中，UI和状态是分离的，状态管理必不可少，各种UI事件下要触发什么样的action，每个action导致什么样的数据变化，这些数据流需要描述清楚，最好能结合组件一起将整个状态的变化描述清楚。
 
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxketgsj20y01804b3.jpg)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxrj4bzj20y0180am9.jpg)
+
 #### 5.1.5 数据存储结构
 
 即使是前端项目，也涉及存储，比如有的数据适合存Cookie，有的适合存Local Storage，还有其他的像服务端Session、本地Session Storage、本地数据库等等，各有各的优缺点，需要根据使用场景灵活选择，并且要设计好存储的结构，考虑好数据更新和缓存失效的问题。
+
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/mw2000/66fd066bgy1h2lbxfepzej20y01807bl.jpg)
 
 ### 5.2 模块设计
 
