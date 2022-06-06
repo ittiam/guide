@@ -28,10 +28,10 @@ module.exports = {
       '/docs': [
         '/docs/',
         '/docs/common/kickoff',
-        '/docs/common/flow',
-        '/docs/common/design',
         '/docs/common/question',
         '/docs/common/markdown',
+        '/docs/common/flow',
+        '/docs/common/design',
         '/docs/common/code-review',
         '/docs/common/api',
         {
