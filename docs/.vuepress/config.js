@@ -38,7 +38,7 @@ module.exports = {
             '/docs/html/note',
             '/docs/html/template',
             '/docs/html/webapp',
-            '/docs/html/escape-html'
+            '/docs/html/escape-code'
           ],
         },
         {
