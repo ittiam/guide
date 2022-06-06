@@ -117,7 +117,7 @@ ClassName 的命名应该尽量精短、明确，必须以**字母开头命名**
 
 _包裹类_： container, wrapper, outer, inner, box, header, footer, main, content, aside, page, section, block
 
-_状态类_： primary, secondary, success, danger, warning, info, error, Link, light, dark, disabled, active, checked, loading
+_状态类_： primary, secondary, success, danger, warning, info, error, link, light, dark, disabled, active, checked, loading, empty
 
 _尺寸类_： large, middle, small, bigger, smaller
 
