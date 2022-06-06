@@ -10,9 +10,9 @@ Code Review 的最大作用在于帮助团队找到代码缺陷。
 
 2. 增加代码质量。有经验的 coder 在架构设计、代码细节等方面会对新人有很好的帮助。Code Review也能帮助 coder 审视到自己的代码质量，以及实施最佳实践。Code Review 最核心的目的就是 code smell，目前公司前端团队代码一般很少经过单元测试&性能测试，经验丰富的同事能很快的发现 code smell，从而杜绝潜在 bug。
 
-![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/design/Experienced-Code-Reviewer.webp)
+![](https://raw.githubusercontent.com/ittiam/guide/master/docs/assets/Experienced-Code-Reviewer.webp)
 
-图源自(Code Review Checklist)[https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/]
+图源自[Code Review Checklist](https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/)
 
 ## 2. Revivew 什么
 
@@ -112,7 +112,6 @@ Code Review 的最大作用在于帮助团队找到代码缺陷。
 | 数据展示                                     |                                                              | 对于资产、金额等关键数据的展示，尽可能直接展示后台返回数据，前端不做计算。 |
 | 数据校验                                     |                                                              | 对传输/接收的数据都进行校验、认证，确保数据的来源和正确。校验有效位、计算精度、完整性、一致性、时效性（获取时机是否正确、缓存是否更新） |
 | 数据转换                                     |                                                              | 数据转换处理一定要经过充分的测试验证，并且尽量选取源数据进行传输，而并非转换后的数据。 |
-|                                              |                                                              |                                                              |
 
 注4: 命名需要符合语义化，如果函数命名，可以采用加上动词前缀：
 
@@ -124,15 +123,15 @@ Code Review 的最大作用在于帮助团队找到代码缺陷。
 
 ### 3.4 Vue
 
-| Prop 定义尽量详细，至少需要指定其类型 | ```props: {  status: String， required: true }```            |      |
+| Prop 定义尽量详细，至少需要指定其类型 | ```props: {  status: String， required: true }```            |   props   |
 | ------------------------------------- | ------------------------------------------------------------ | ---- |
-| v-for 遍历必须添加 key                | ```<ul>  <li v-for="todo in todos" :key="todo.id">{{ todo.text }}</li> </ul>``` |      |
 | v-if 和 v-for 不要用在同一个元素上    |                                                              |      |
+| v-for 遍历必须添加 key                | ```<ul>  <li v-for="todo in todos" :key="todo.id"></li> </ul>``` |      |
 | 组件模板应该书写简洁                  |                                                              |      |
 | 指令缩写                              |                                                              |      |
 | 多个属性进行分行                      |                                                              |      |
 | 为组件样式设置作用域                  |                                                              |      |
-| 清除定时器或者事件监听                |                                                              |      |
+| 清除定时器或者事件监听                |                                                              |   beforeDestory   |
 
 ### 3.5 性能与安全
 
@@ -142,5 +141,4 @@ Code Review 的最大作用在于帮助团队找到代码缺陷。
 | 懒加载   |                                                              | 是否可以通过懒加载或者按需加载进行优化？                     |
 | 缓存数据 |                                                              | 需要重复加载数据时，可以通过缓存数据减少请求                 |
 | 影响范围 | 底层架构、组件或者方法的修改，是否确认影响范围，每个受影响的依赖都能正常使用。 |                                                              |
-| 修改范围 | 是否属于本次迭代正常上线的功能范围，有没有对本次范围进行变更，是否通知到测试同学。 | 我们上线的代码往往有很多属于夹带私货，比如，上个迭代有一个影响不大的小Bug，趁着还没被发现，偷偷将它带上线，或者，发现上一次写的代码太蠢了，还有更好的解决思路，于是洁癖发作，默默地改了。但是测试只知道本次迭代的功能特性，除了回归主功能之外，并不知道还有其他需要重新测试的地方。如果开发同学刚好对自己的代码非常自信，觉得一定没问题，没有通知到测试回归。根据墨菲定律，这种往往觉得没有问题的代码，最后...都能够引发线上故障。 |
-
+| 修改范围 | 是否属于本次迭代正常上线的功能范围，有没有对本次范围进行变更，是否通知到测试同学。 | 我们上线的代码往往有很多属于夹带私货，比如，上个迭代有一个影响不大的小Bug，趁着还没被发现，偷偷将它带上线，或者，发现上一次写的代码太蠢了，还有更好的解决思路，于是洁癖发作，默默地改了。 |
