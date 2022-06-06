@@ -43,7 +43,7 @@
 - 备忘单与代码片段（Cheatsheet & Code Snippets）
   - [this vs that](https://thisthat.dev/) - 类似概念区分理解。
 
-## 设计
+## UI 设计语言
   - [52 Design Principles](https://rpdc.xiaohongshu.com/52-design-principles) - 小红书设计原则
   - [Au Design](https://design.jiguang.cn/) - 极光设计原则
 
