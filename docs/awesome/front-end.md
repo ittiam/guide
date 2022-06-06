@@ -897,14 +897,6 @@ _Application architecture patterns._
   - [JSFiddle](https://jsfiddle.net/)
   - [JSitor](https://jsitor.com/)
 
-- 工具箱（Tools）
-  - [我的工具箱](https://toolgg.com/) - 前端开发工具箱
-  - [我的工具](https://tooltt.com/) - 前端开发工具箱
-  - [独特工具箱](https://www.dute.org/) - 前端开发工具箱
-  - [开发资源](https://www.thosefree.com/) - 前端开发资源
-  - [html2markdown](https://tooltt.com/html2markdown/) - HTML转MarkDown工具
-  - [json](https://www.json.cn/) - JSON 解析
-
 - 其它（Others）
   - [bit](https://bit.dev/) - 构建可重用组件的协作平台。
   - [Prettier Playground](https://prettier.io/playground/) - Prettier 代码格式化工具的在线版本。

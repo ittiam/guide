@@ -21,6 +21,12 @@
   - [ProductHunt](https://www.producthunt.com/) - 产品发布分享。
   - [Slant](https://www.slant.co/) - 搜索最佳实践。
   - [Ptable](https://ptable.com/?lang=zh) - 化学元素周期表。
+  - [我的工具箱](https://toolgg.com/) - 前端开发工具箱
+  - [我的工具](https://tooltt.com/) - 前端开发工具箱
+  - [独特工具箱](https://www.dute.org/) - 前端开发工具箱
+  - [开发资源](https://www.thosefree.com/) - 前端开发资源
+  - [html2markdown](https://tooltt.com/html2markdown/) - HTML转MarkDown工具
+  - [json](https://www.json.cn/) - JSON 解析
 
 - 密码生成器（Password generator）
   - [Avast](https://www.avast.com/random-password-generator) - 防病毒软件 Avast 提供。
