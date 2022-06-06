@@ -32,6 +32,7 @@ module.exports = {
         '/docs/common/design',
         '/docs/common/question',
         '/docs/common/markdown',
+        '/docs/common/api',
         {
           title: 'HTML 规范',
           children: [
