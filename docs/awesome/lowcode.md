@@ -52,3 +52,4 @@
 
 - [简道云](https://www.jiandaoyun.com/)
 - [LowCode Engine](https://lowcode-engine.cn/)
+- [携程 Foxpage 前端低代码框架](https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697272519&idx=1&sn=a4175298cad1f708fd2803d7167436fa&chksm=8376e3f3b4016ae59afda3132aaed33ec7da4dcb31461f62666d9881c88e3656d19b1bdc019e&scene=21#wechat_redirect)
