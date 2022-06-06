@@ -148,3 +148,7 @@ _人物类_： avatar, name, age, post, intro
 <div class="KMT"></div>
 ...
 ```
+
+## 参考
+
+- [BEM Cheat Sheet](https://9elements.com/bem-cheat-sheet/)
