@@ -92,6 +92,7 @@ _UI Design System, provides a base system for building a design system._
 - [varlet](https://github.com/varletjs/varlet) - vue3&material design
 - [varlet-vue2](https://github.com/varletjs/varlet-vue2) - vue2&material design
 - [vant](https://youzan.github.io/vant/#/zh-CN) - vue2&vue3
+- [nutui](https://github.com/jdf2e/nutui) - 京东开发的移动端 Vue2、Vue3 组件库
 
 ### 独立组件
 
