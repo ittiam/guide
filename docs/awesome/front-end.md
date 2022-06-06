@@ -339,6 +339,8 @@ _see also 👉  [Node.JS-工具库](./awesome-dev-nodejs.md#工具库)_
     - [jsPDF](https://github.com/MrRio/jsPDF) - Web 客户端生成 PDF 文件。
     - [PDFKit](http://pdfkit.org/) - 生成 PDF 文件。
     - [pdfmake](http://pdfmake.org/)
+    - [html-to-pdfmake](https://github.com/Aymkdn/html-to-pdfmake) - HTML转PDF工具
+    - [bookjs-easy](https://gitee.com/wuxue107/bookjs-eazy) - WEB打印，HTML转PDF工具
   - image
     - [Pica](http://nodeca.github.io/pica/demo/) - 图片质量调整。
     - [merge-images](https://github.com/lukechilds/merge-images) - 图片拼接合并。
