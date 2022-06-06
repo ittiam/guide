@@ -29,8 +29,8 @@ module.exports = {
         '/docs/',
         '/docs/common/kickoff',
         '/docs/common/flow',
-        '/docs/common/markdown',
         '/docs/common/question',
+        '/docs/common/markdown',
         {
           title: 'HTML 规范',
           children: [
