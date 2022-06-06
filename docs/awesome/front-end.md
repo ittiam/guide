@@ -34,7 +34,7 @@
   - [印记中文](https://docschina.org/) - 包含了许多前端技术库的中文翻译文档。
 
 - 技术设计文档 (System design docs)
-  - [技术设计模板](./前端技术方案模板.md)
+  - [技术设计模板](https://guide.cowboybebop.space/docs/common/design.html)
   - [系统设计](https://weibo.com/1727858283/LuJnKc0bw)
 
 - 路线图（Roadmap）

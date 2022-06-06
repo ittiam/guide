@@ -29,6 +29,7 @@ module.exports = {
         '/docs/',
         '/docs/common/kickoff',
         '/docs/common/flow',
+        '/docs/common/design',
         '/docs/common/question',
         '/docs/common/markdown',
         {
