@@ -42,9 +42,15 @@
   border-top: 1px solid #eaecef;
 }
 
-.content__default img {
+.theme-antdocs-content:not(.custom) img {
   display: block;
   max-width: 50%;
   height: auto;
   margin: 1.5em auto 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .theme-antdocs-content:not(.custom) img {
+    max-width: 100%;
+  }
 }
