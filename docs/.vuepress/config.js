@@ -33,7 +33,13 @@ module.exports = {
         '/docs/common/question',
         {
           title: 'HTML 规范',
-          children: ['/docs/html/code', '/docs/html/note', '/docs/html/template', '/docs/html/webapp'],
+          children: [
+            '/docs/html/code',
+            '/docs/html/note',
+            '/docs/html/template',
+            '/docs/html/webapp',
+            '/docs/html/escape-html'
+          ],
         },
         {
           title: 'CSS 规范',
