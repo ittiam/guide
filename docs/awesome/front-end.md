@@ -357,6 +357,9 @@ _see also 👉  [Node.JS-工具库](./awesome-dev-nodejs.md#工具库)_
 - HTTP 请求（HTTP - Ajax / Promise / fetch）
   - [axios](https://github.com/axios/axios) - 基于 Promise 的 HTTP 客户端工具库。
     - [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter) - Mock API。
+    - [pont](https://github.com/alibaba/pont) - 🌉数据服务层解决方案
+    - [better-mock](https://github.com/lavyun/better-mock) - 数据模拟
+    - [yapi](https://github.com/ymfe/yapi) - 可视化的接口管理平台
 
 - 套接字（Socket / TCP）
   - [socket.io-client](https://socket.io/) - 优秀的实时通信客户端框架。

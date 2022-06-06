@@ -18,6 +18,11 @@ _[Naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) & [CODELF]
 
 - [Html escape code](https://www.dute.org/html-escape-code) - HTML 转义字符
 
+### :bookmark: Chinese Characters
+
+- [Standard Chinese Characters](https://github.com/jaywcjlove/table-of-general-standard-chinese-characters) - 通用规范汉字表
+- [DomainWordsDict](https://github.com/liuhuanyong/DomainWordsDict) - 专业词典知识库
+
 ### :bookmark: Algorithms and Data Structures
 
 - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) `Big-O`
