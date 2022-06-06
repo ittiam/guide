@@ -14,6 +14,10 @@ _[Naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) & [CODELF]
 - [github emoji markup](https://gist.github.com/rxaviers/7360908) `github` `shortcode`
 - [gitmoji](https://gitmoji.dev/) `git` `shortcode`
 
+### :bookmark: Reference
+
+- [Html escape code](https://www.dute.org/html-escape-code) - HTML 转义字符
+
 ### :bookmark: Algorithms and Data Structures
 
 - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) `Big-O`
