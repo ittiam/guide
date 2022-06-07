@@ -30,10 +30,15 @@ module.exports = {
         '/docs/common/kickoff',
         '/docs/common/question',
         '/docs/common/markdown',
-        '/docs/common/flow',
-        '/docs/common/design',
-        '/docs/common/api',
-        '/docs/common/code-review',
+        {
+          title: '开发流程规范',
+          children: [
+            '/docs/common/flow',
+            '/docs/common/design',
+            '/docs/common/api',
+            '/docs/common/code-review'
+          ]
+        },
         {
           title: 'HTML 规范',
           children: [
