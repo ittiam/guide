@@ -254,22 +254,14 @@ node_modules
 ### prettier
 
 ```bash
-npm install --save-dev prettier
+npm install --save-dev prettier @wpg/prettier-config
 ```
 
-配置 .prettierrc
+In `package.json`:
 
 ```json
 {
-  "printWidth": 100,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": true,
-  "jsxSingleQuote": false,
-  "trailingComma": "none",
-  "arrowParens": "avoid",
-  "vueIndentScriptAndStyle": true
+  "prettier": "@wpg/prettier-config"
 }
 ```
 
