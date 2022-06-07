@@ -75,7 +75,8 @@ module.exports = {
         {
           title: 'TypeScript 规范',
           children: [
-            '/docs/typescript/base'
+            '/docs/typescript/base',
+            '/docs/typescript/generics'
           ]
         },
         {
