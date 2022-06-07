@@ -146,7 +146,7 @@ vue create hello-world
 
 ## 开发规范
 
-参考[前端规范](https://guide.czh.vercel.app/)
+参考[前端规范](https://guide.cowboybebop.space/)
 
 ### babel
 
