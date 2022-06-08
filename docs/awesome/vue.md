@@ -86,13 +86,15 @@ _UI Design System, provides a base system for building a design system._
 - [element](https://github.com/ElemeFE/element) - vue2
 - [element-plus](https://github.com/element-plus/element-plus) - vue3
 - [ant-design-vue](https://github.com/vueComponent/ant-design-vue/) - vue2&vue3
-- [arco-design-vue](https://github.com/arco-design/arco-design-vue) - vue3
+- [tdesign](https://github.com/Tencent/tdesign-vue) - vue2
+- [arco-design](https://github.com/arco-design/arco-design-vue) - vue3
 - [quasar](https://github.com/quasarframework/quasar) - vue2&vue3
 - [naive-ui](https://github.com/TuSimple/naive-ui) - vue3
 - [varlet](https://github.com/varletjs/varlet) - vue3&material design
 - [varlet-vue2](https://github.com/varletjs/varlet-vue2) - vue2&material design
 - [vant](https://youzan.github.io/vant/#/zh-CN) - vue2&vue3
 - [nutui](https://github.com/jdf2e/nutui) - 京东开发的移动端 Vue2、Vue3 组件库
+- [daisyui](https://github.com/saadeghi/daisyui) - Tailwind CSS component library
 
 ### 独立组件
 

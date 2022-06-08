@@ -17,3 +17,5 @@
 
 - [浏览器安全（上）](https://cloud.tencent.com/developer/article/1639628) _[醉酒鞭名马]_
 - [浏览器安全（下）](https://cloud.tencent.com/developer/article/1644361) _[醉酒鞭名马]_
+- [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/2018/09/27/fe-security.html)
+- [前端安全系列（二）：如何防止CSRF攻击？](https://tech.meituan.com/2018/10/11/fe-security-csrf.html)
